@@ -1,4 +1,4 @@
-14808904112165971
+14810452992585663
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (http://www.bulgin.com/media/bulgin/data/Battery_holders.pdf)
@@ -47837,6 +47837,13 @@ SMD_1_2_4x2
 0
 2
 2
+Mlab_Pin_Headers
+SMD_2x03
+pin header straight 2x03
+pin header straight 2x03
+0
+6
+6
 Mlab_Pin_Headers
 Straight_1x01
 pin header straight 1x01
