@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:SPACEDOS01A_PCB01A-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1351,4 +1351,11 @@ Wire Wire Line
 	9600 650  9600 700 
 Wire Wire Line
 	9600 650  10000 650 
+Wire Wire Line
+	8350 5150 10550 5150
+Connection ~ 8350 5150
+Text Label 10000 5150 0    60   ~ 0
+Trace
+Text GLabel 10550 5150 2    60   Input ~ 0
+PB0
 $EndSCHEMATC

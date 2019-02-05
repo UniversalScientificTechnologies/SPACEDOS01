@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:SPACEDOS01A_PCB01A-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -829,7 +829,6 @@ NoConn ~ 6850 3700
 NoConn ~ 6850 2700
 NoConn ~ 6850 2600
 NoConn ~ 6850 2500
-NoConn ~ 6850 2400
 NoConn ~ 6850 2200
 NoConn ~ 6850 2100
 NoConn ~ 6850 2000
@@ -888,4 +887,8 @@ Wire Wire Line
 	6850 4000 7200 4000
 NoConn ~ 6850 2800
 NoConn ~ 6850 3500
+Text GLabel 6950 2400 2    60   Input ~ 0
+PB0
+Wire Wire Line
+	6850 2400 6950 2400
 $EndSCHEMATC
