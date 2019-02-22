@@ -1358,4 +1358,36 @@ Text Label 10000 5150 0    60   ~ 0
 Trace
 Text GLabel 10550 5150 2    60   Input ~ 0
 PB0
+$Comp
+L MLAB_MECHANICAL:HOLE M5
+U 1 1 5C7015D6
+P 9400 750
+F 0 "M5" V 9300 750 60  0000 C CNN
+F 1 "BMI-S-210-F" H 9400 650 60  0001 C CNN
+F 2 "Mlab_Mechanical:BMI-S-210-F" H 9400 750 60  0001 C CNN
+F 3 "" H 9400 750 60  0000 C CNN
+	1    9400 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 650  9400 650 
+Wire Wire Line
+	9400 650  9400 700 
+Connection ~ 9600 650 
+$Comp
+L MLAB_MECHANICAL:HOLE M8
+U 1 1 5C71374D
+P 9200 750
+F 0 "M8" V 9100 750 60  0000 C CNN
+F 1 "BMI-S-204-F" H 9200 650 60  0001 C CNN
+F 2 "RF_Shielding:Laird_Technologies_BMI-S-204-F_32.00x32.00mm" H 9200 750 60  0001 C CNN
+F 3 "" H 9200 750 60  0000 C CNN
+	1    9200 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 650  9200 650 
+Wire Wire Line
+	9200 650  9200 700 
+Connection ~ 9400 650 
 $EndSCHEMATC
