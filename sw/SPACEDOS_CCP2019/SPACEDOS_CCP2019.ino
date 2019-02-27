@@ -54,6 +54,8 @@ uint16_t count = 0;
 uint16_t offset, base_offset;
 uint8_t lo, hi;
 uint16_t u_sensor, maximum;
+uint32_t dayly[8], day1[3], day2[3];
+uint16_t daylycount = 0;
 
 RTC_Millis rtc;
 
@@ -88,6 +90,8 @@ void setup()
   {
     ; // wait for serial port to connect. Needed for Leonardo only?
   }
+
+  wdt_enable(WDTO_8S); // Enable WDT with 8 second timeout
 
   Serial.println("#Cvak...");
 
@@ -135,7 +139,17 @@ void setup()
   }
   base_offset = u_sensor - 2;
 
-  wdt_enable(WDTO_8S); // Enable WDT with 8 second timeout
+  for (int n = 0; n < 8; n++) // Reset dayly flux counts
+  {
+    dayly[n] = 0;
+  }
+
+  for (int n = 0; n < 3; n++) // Reset dayly circular buffer
+  {
+    day1[n] = 0;
+    day2[n] = 0;
+  }
+
   
   Serial.println("#Hmmm...");
 }
@@ -145,7 +159,7 @@ void loop()
 {
   uint16_t buffer[CHANNELS];
 
-  for (int n = 0; n < CHANNELS; n++)
+  for (int n = 0; n < CHANNELS; n++) // Reset buffer for histogram
   {
     buffer[n] = 0;
   }
@@ -285,6 +299,7 @@ void loop()
 
     // 0.1 MeV
     sprintf(buf, "%04x", buffer[noise]);
+    dayly[0] += buffer[noise];
     dataString += buf;
     dataString += ",";
 
@@ -294,6 +309,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[1] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -304,6 +320,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[2] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -314,6 +331,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[3] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -324,6 +342,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[4] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -334,6 +353,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[5] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -344,6 +364,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[6] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -354,6 +375,7 @@ void loop()
       energy += buffer[n];
     }
     sprintf(buf, "%04x", energy);
+    dayly[7] += energy;
     dataString += buf;
     dataString += ",";
     energy = 0;
@@ -373,18 +395,74 @@ void loop()
     dataString += String(suppress);
     dataString += ",";
     dataString += String(base_offset);
-    dataString += ",";
 
-    for (uint16_t n = base_offset; n < (base_offset + 80); n++)
+    for (uint16_t n = base_offset; n < (base_offset + 50); n++)
     {
-      dataString += String(buffer[n]);
       dataString += ",";
+      dataString += String(buffer[n]);
     }
 
 
     Serial.println(dataString);  // print-out data
 
+
+    // Dayly data for Beacon
+    dataString = "$BESD,";
+
+    sprintf(buf, "%04x", daylycount);
+    dataString += String(buf);
+
+    for (int n = 0; n < 8; n++)
+    {
+      dataString += ",";
+      sprintf(buf, "%08lx", dayly[n]);
+      dataString += String(buf);
+    }
+
+    Serial.println(dataString);  // print-out data
+
     count++;
+    daylycount++;
+
+    if (daylycount > 4) //!!! ((60*60*24)/15))
+    {
+      // Almanac data for Beacon
+
+      dataString = "$ADSD,";
+      sprintf(buf, "%08lx", day1[0]);
+      dataString += String(buf);
+      dataString += ",";
+      sprintf(buf, "%08lx", day1[1]);
+      dataString += String(buf);
+      dataString += ",";
+      sprintf(buf, "%08lx", day1[2]);
+      dataString += String(buf);
+      dataString += ",";
+      sprintf(buf, "%08lx", day2[0]);
+      dataString += String(buf);
+      dataString += ",";
+      sprintf(buf, "%08lx", day2[1]);
+      dataString += String(buf);
+      dataString += ",";
+      sprintf(buf, "%08lx", day2[2]);
+      dataString += String(buf);
+
+      Serial.println(dataString);  // print-out data
+
+      for (int n = 0; n < 3; n++) // Shift dayly circular buffer
+      {
+        day2[n] = day1[n];
+      }
+      day1[0] = dayly[0];
+      day1[1] = dayly[1] + dayly[2] + dayly[3];
+      day1[2] = dayly[4] + dayly[5] + dayly[6] + dayly[7]; 
+
+      daylycount = 0;
+      for (int n = 0; n < 8; n++) // Reset dayly flux counts
+      {
+        dayly[n] = 0;
+      }
+    }
   }
 }
 
