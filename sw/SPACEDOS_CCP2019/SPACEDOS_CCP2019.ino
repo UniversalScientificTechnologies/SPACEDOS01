@@ -1,3 +1,4 @@
+String githash = "$Id: 2a1c18d43c3937e40a3beb6c2855589b2d1a19e9 $";
 /*
   SPACEDOS for CCP2019
 
@@ -41,8 +42,8 @@ TX1/INT1 (D 11) PD3 17|        |24 PC2 (D 18) TCK
 */
 
 #include "wiring_private.h"
-#include <Wire.h>           // Tested with version 1.0.0.
-#include "RTClib.h"         // Tested with version 1.5.4.
+#include <Wire.h>           // Tested with version 1.0.0. built in
+#include "RTClib.h"         // Tested with version 1.5.4. by NeiroN
 #include <avr/wdt.h>
 
 #define TRACE     0    // PB0
@@ -93,7 +94,7 @@ void setup()
 
   wdt_enable(WDTO_8S); // Enable WDT with 8 second timeout
 
-  Serial.println("#Cvak...");
+  Serial.println("$POSD," + githash.substring(5,45)); // FW Git hash
 
   ADMUX = (analog_reference << 6) | ((PIN | 0x10) & 0x1F);
 
@@ -151,7 +152,7 @@ void setup()
   }
 
   
-  Serial.println("#Hmmm...");
+  Serial.println("$ICSD");
 }
 
 
@@ -388,18 +389,18 @@ void loop()
     // Decimal spectrum for Housekeeping
     dataString = "$HKSD,";
 
-    dataString += String(count);
+    dataString += String(count, HEX);
     dataString += ",";
-    dataString += String(uptime);
+    dataString += String(uptime, HEX);
     dataString += ",";
-    dataString += String(suppress);
+    dataString += String(suppress, HEX);
     dataString += ",";
-    dataString += String(base_offset);
+    dataString += String(base_offset, HEX);
 
     for (uint16_t n = base_offset; n < (base_offset + 50); n++)
     {
       dataString += ",";
-      dataString += String(buffer[n]);
+      dataString += String(buffer[n], HEX);
     }
 
 
