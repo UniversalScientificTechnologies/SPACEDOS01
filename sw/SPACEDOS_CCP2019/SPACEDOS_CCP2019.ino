@@ -1,4 +1,4 @@
-String githash = "$Id: 2a1c18d43c3937e40a3beb6c2855589b2d1a19e9 $";
+String githash = "$Id$";
 /*
   SPACEDOS for CCP2019
 
@@ -47,6 +47,8 @@ TX1/INT1 (D 11) PD3 17|        |24 PC2 (D 18) TCK
 #include <avr/wdt.h>
 
 #define TRACE     0    // PB0
+#define PC7       23   // PC7
+#define PC3       19   // PC3
 
 #define CHANNELS 512   // number of channels in buffer for histogram, including negative numbers
 #define RANGE 252      // Dynamic range in channels
@@ -87,10 +89,6 @@ void setup()
 
   // Open serial communications and wait for port to open:
   Serial.begin(2400);
-  while (!Serial)
-  {
-    ; // wait for serial port to connect. Needed for Leonardo only?
-  }
 
   wdt_enable(WDTO_8S); // Enable WDT with 8 second timeout
 
@@ -106,7 +104,10 @@ void setup()
   cbi(ADCSRA, 0);
 
   pinMode(TRACE, OUTPUT);   // TRACE for peak detetor
-
+  pinMode(PC7, INPUT);      // spare input port
+  digitalWrite(PC3, LOW);   // turn the output port low
+  pinMode(PC3, OUTPUT);     // spare output port
+ 
   digitalWrite(TRACE, LOW);
 
   // measurement of ADC offset
@@ -280,28 +281,23 @@ void loop()
     uint32_t uptime;
     uptime = now.unixtime();
 
-    char buf[10];
-
     // make a string for assembling the data to log
     // HexaDecimal Compressed Spectrum
     String dataString = "$DPSD,";
 
-    sprintf(buf, "%08lx", uptime);
-    dataString += buf;
+    dataString += String(uptime, HEX);;
     dataString += ",";
 
     uint16_t noise = base_offset + 3;
     uint16_t energy = 0;
 
     // noise
-    sprintf(buf, "%04x", buffer[noise-1]);
-    dataString += buf;
+    dataString += String(buffer[noise-1], HEX);
     dataString += ",";
 
     // 0.1 MeV
-    sprintf(buf, "%04x", buffer[noise]);
+    dataString += String(buffer[noise], HEX);
     dayly[0] += buffer[noise];
-    dataString += buf;
     dataString += ",";
 
     // 0.14 MeV
@@ -309,9 +305,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[1] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -320,9 +315,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[2] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -331,9 +325,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[3] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -342,9 +335,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[4] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -353,9 +345,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[5] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -364,9 +355,8 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[6] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
@@ -375,14 +365,12 @@ void loop()
     {
       energy += buffer[n];
     }
-    sprintf(buf, "%04x", energy);
+    dataString += String(energy, HEX);
     dayly[7] += energy;
-    dataString += buf;
     dataString += ",";
     energy = 0;
 
-    sprintf(buf, "%04x", offset);
-    dataString += buf;
+    dataString += String(offset, HEX);
 
     Serial.println(dataString);  // print-out data
 
@@ -410,14 +398,12 @@ void loop()
     // Dayly data for Beacon
     dataString = "$BESD,";
 
-    sprintf(buf, "%04x", daylycount);
-    dataString += String(buf);
+    dataString += String(daylycount, HEX);
 
     for (int n = 0; n < 8; n++)
     {
       dataString += ",";
-      sprintf(buf, "%08lx", dayly[n]);
-      dataString += String(buf);
+      dataString += String(dayly[n], HEX);
     }
 
     Serial.println(dataString);  // print-out data
@@ -430,23 +416,17 @@ void loop()
       // Almanac data for Beacon
 
       dataString = "$ADSD,";
-      sprintf(buf, "%08lx", day1[0]);
-      dataString += String(buf);
+      dataString += String(day1[0], HEX);
       dataString += ",";
-      sprintf(buf, "%08lx", day1[1]);
-      dataString += String(buf);
+      dataString += String(day1[1], HEX);
       dataString += ",";
-      sprintf(buf, "%08lx", day1[2]);
-      dataString += String(buf);
+      dataString += String(day1[2], HEX);
       dataString += ",";
-      sprintf(buf, "%08lx", day2[0]);
-      dataString += String(buf);
+      dataString += String(day2[0], HEX);
       dataString += ",";
-      sprintf(buf, "%08lx", day2[1]);
-      dataString += String(buf);
+      dataString += String(day2[1], HEX);
       dataString += ",";
-      sprintf(buf, "%08lx", day2[2]);
-      dataString += String(buf);
+      dataString += String(day2[2], HEX);
 
       Serial.println(dataString);  // print-out data
 
