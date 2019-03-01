@@ -1,0 +1,4 @@
+#!/bin/bash
+rm ./sw/SPACEDOS_CCP2019/SPACEDOS_CCP2019.ino
+git checkout -- ./sw/SPACEDOS_CCP2019/SPACEDOS_CCP2019.ino
+
