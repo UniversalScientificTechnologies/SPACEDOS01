@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SPACEDOS01A_PCB01A-cache
+LIBS:SPACEDOS01B_PCB01A-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SPACEDOS01A_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue D?
+L SPACEDOS01B_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue D?
 U 1 1 5C6BE250
 P 2800 1750
 AR Path="/5C4AEDD8/5C6BE250" Ref="D?"  Part="1" 
@@ -46,7 +46,7 @@ $EndComp
 Wire Wire Line
 	2800 1950 2800 1900
 $Comp
-L SPACEDOS01A_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6BE26E
 P 3450 1650
 AR Path="/5C4AEDD8/5C6BE26E" Ref="C?"  Part="1" 
@@ -59,7 +59,7 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6BE27C
 P 3850 1750
 AR Path="/5C4AEDD8/5C6BE27C" Ref="C?"  Part="1" 
@@ -126,7 +126,7 @@ $EndComp
 Wire Wire Line
 	3450 1750 3450 1950
 $Comp
-L SPACEDOS01A_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue F?
+L SPACEDOS01B_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue F?
 U 1 1 5C6BE2A0
 P 2450 1550
 AR Path="/5C4AEDD8/5C6BE2A0" Ref="F?"  Part="1" 
@@ -167,7 +167,7 @@ $EndComp
 Wire Wire Line
 	6750 3800 7100 3800
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6C450E
 P 8050 4050
 AR Path="/5C4AEDD8/5C6C450E" Ref="C?"  Part="1" 
@@ -180,7 +180,7 @@ F 3 "" H 8050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6C45C5
 P 8500 4050
 AR Path="/5C4AEDD8/5C6C45C5" Ref="C?"  Part="1" 
@@ -298,7 +298,7 @@ Wire Wire Line
 	8500 3800 8850 3800
 Connection ~ 8500 3800
 $Comp
-L SPACEDOS01A_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6CDA68
 P 9050 3900
 AR Path="/5C4AEDD8/5C6CDA68" Ref="C?"  Part="1" 
@@ -311,7 +311,7 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6CDA6E
 P 9450 4000
 AR Path="/5C4AEDD8/5C6CDA6E" Ref="C?"  Part="1" 
@@ -385,7 +385,7 @@ $EndComp
 Wire Wire Line
 	6750 5100 7100 5100
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6D0EB3
 P 8050 5350
 AR Path="/5C4AEDD8/5C6D0EB3" Ref="C?"  Part="1" 
@@ -398,7 +398,7 @@ F 3 "" H 8050 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6D0EB9
 P 8500 5350
 AR Path="/5C4AEDD8/5C6D0EB9" Ref="C?"  Part="1" 
@@ -482,7 +482,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 5200 8500 5100
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6D0EE7
 P 6300 5350
 AR Path="/5C4AEDD8/5C6D0EE7" Ref="C?"  Part="1" 
@@ -518,7 +518,7 @@ Wire Wire Line
 	8500 5100 8850 5100
 Connection ~ 8500 5100
 $Comp
-L SPACEDOS01A_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6D0EF9
 P 9050 5200
 AR Path="/5C4AEDD8/5C6D0EF9" Ref="C?"  Part="1" 
@@ -531,7 +531,7 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6D0EFF
 P 9450 5300
 AR Path="/5C4AEDD8/5C6D0EFF" Ref="C?"  Part="1" 
@@ -594,7 +594,7 @@ $EndComp
 Wire Wire Line
 	2000 1550 2150 1550
 $Comp
-L SPACEDOS01A_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue D?
+L SPACEDOS01B_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue D?
 U 1 1 5C589333
 P 2800 3550
 AR Path="/5C4AEDD8/5C589333" Ref="D?"  Part="1" 
@@ -625,7 +625,7 @@ $EndComp
 Wire Wire Line
 	2800 3750 2800 3700
 $Comp
-L SPACEDOS01A_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C589354
 P 3450 3450
 AR Path="/5C4AEDD8/5C589354" Ref="C?"  Part="1" 
@@ -638,7 +638,7 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C589368
 P 3850 3550
 AR Path="/5C4AEDD8/5C589368" Ref="C?"  Part="1" 
@@ -705,7 +705,7 @@ $EndComp
 Wire Wire Line
 	3450 3550 3450 3750
 $Comp
-L SPACEDOS01A_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue F?
+L SPACEDOS01B_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue F?
 U 1 1 5C58939A
 P 2450 3350
 AR Path="/5C4AEDD8/5C58939A" Ref="F?"  Part="1" 
@@ -877,7 +877,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 1550 4200 1500
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C5FA3D4
 P 3100 1750
 AR Path="/5C4AEDD8/5C5FA3D4" Ref="C?"  Part="1" 
@@ -890,7 +890,7 @@ F 3 "" H 3100 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C5FB0D4
 P 3100 3550
 AR Path="/5C4AEDD8/5C5FB0D4" Ref="C?"  Part="1" 
@@ -903,7 +903,7 @@ F 3 "" H 3100 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SPACEDOS01A_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue C?
+L SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue C?
 U 1 1 5C6C894E
 P 6300 4050
 AR Path="/5C4AEDD8/5C6C894E" Ref="C?"  Part="1" 
