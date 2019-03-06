@@ -195,17 +195,6 @@ Wire Wire Line
 Connection ~ 1750 4950
 Wire Wire Line
 	1750 4950 1900 4950
-$Comp
-L Device:D_Photo D2
-U 1 1 5B3A05A5
-P 1700 4350
-F 0 "D2" H 1650 4645 50  0000 C CNN
-F 1 "S2744-09" H 1650 4554 50  0000 C CNN
-F 2 "Mlab_D:HAMAMATSU_S2744-09" H 1650 4350 50  0001 C CNN
-F 3 "~" H 1650 4350 50  0001 C CNN
-	1    1700 4350
-	1    0    0    -1  
-$EndComp
 Text Label 1500 4950 0    60   ~ 0
 REF
 $Comp
@@ -1112,8 +1101,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 4350 1900 4350
 Connection ~ 1900 4350
-Wire Wire Line
-	1900 4350 1900 4750
 $Sheet
 S 6750 800  850  350 
 U 5C4AEDD8
@@ -1265,8 +1252,6 @@ Text Label 3050 7150 0    60   ~ 0
 REF
 Text Label 1000 4350 0    60   ~ 0
 Ubiasout
-Wire Wire Line
-	1000 4350 1500 4350
 $Comp
 L power:+3.3V #PWR0106
 U 1 1 5C6997A5
@@ -1395,4 +1380,19 @@ Wire Wire Line
 	9000 650  8800 650 
 Wire Wire Line
 	9400 650  10000 650 
+$Comp
+L Device:D_Photo D1
+U 1 1 5C80A3E9
+P 1700 4350
+F 0 "D1" H 1350 4450 50  0000 C CNN
+F 1 "S11773-02" H 1650 4550 50  0000 C CNN
+F 2 "Mlab_D:HAMAMATSU_S11773-02" H 1650 4350 50  0001 C CNN
+F 3 "~" H 1650 4350 50  0001 C CNN
+	1    1700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4350 1900 4750
+Wire Wire Line
+	1000 4350 1500 4350
 $EndSCHEMATC
