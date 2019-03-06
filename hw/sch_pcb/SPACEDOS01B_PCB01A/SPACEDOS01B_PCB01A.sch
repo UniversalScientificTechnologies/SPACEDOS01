@@ -1343,17 +1343,6 @@ Text Label 10000 5150 0    60   ~ 0
 Trace
 Text GLabel 10550 5150 2    60   Input ~ 0
 PB0
-$Comp
-L MLAB_MECHANICAL:HOLE M5
-U 1 1 5C7015D6
-P 9400 750
-F 0 "M5" V 9300 750 60  0000 C CNN
-F 1 "BMI-S-210-F" H 9400 650 60  0001 C CNN
-F 2 "Mlab_Mechanical:BMI-S-210-F" H 9400 750 60  0001 C CNN
-F 3 "" H 9400 750 60  0000 C CNN
-	1    9400 750 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9400 650  9400 700 
 $Comp
