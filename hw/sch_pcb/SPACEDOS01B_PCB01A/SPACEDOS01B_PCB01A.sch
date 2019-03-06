@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:SPACEDOS01B_PCB01A-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1336,21 +1336,6 @@ F 3 "" H 2200 7200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 7200 2200 7150
-$Comp
-L MLAB_MECHANICAL:HOLE M7
-U 1 1 5C564E7A
-P 9600 750
-F 0 "M7" V 9500 750 60  0000 C CNN
-F 1 "BMI-S-210-F" H 9600 650 60  0001 C CNN
-F 2 "Mlab_Mechanical:BMI-S-210-F" H 9600 750 60  0001 C CNN
-F 3 "" H 9600 750 60  0000 C CNN
-	1    9600 750 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9600 650  9600 700 
-Wire Wire Line
-	9600 650  10000 650 
 Wire Wire Line
 	8350 5150 10550 5150
 Connection ~ 8350 5150
@@ -1370,10 +1355,7 @@ F 3 "" H 9400 750 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9600 650  9400 650 
-Wire Wire Line
 	9400 650  9400 700 
-Connection ~ 9600 650 
 $Comp
 L MLAB_MECHANICAL:HOLE M8
 U 1 1 5C71374D
@@ -1422,4 +1404,6 @@ Wire Wire Line
 Connection ~ 9000 650 
 Wire Wire Line
 	9000 650  8800 650 
+Wire Wire Line
+	9400 650  10000 650 
 $EndSCHEMATC
