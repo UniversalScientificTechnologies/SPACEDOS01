@@ -1,0 +1,646 @@
+[
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_C:TantalC_SizeC_Reflow", 
+        "Ref": "C1", 
+        "Tstamp": "5B46AE4B", 
+        "Value": "22uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C2", 
+        "Tstamp": "5C52C88C", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C3", 
+        "Tstamp": "5B39C727", 
+        "Value": "4u7"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C4", 
+        "Tstamp": "5B46AED9", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C5", 
+        "Tstamp": "5B3A36AE", 
+        "Value": "1pFNP0 251R15S1R0AV4E"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C6", 
+        "Tstamp": "5B46F2E3", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C7", 
+        "Tstamp": "5B4BB914", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C8", 
+        "Tstamp": "5B4C840F", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C9", 
+        "Tstamp": "5B4C8438", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C10", 
+        "Tstamp": "5B3A3816", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C11", 
+        "Tstamp": "5B46F367", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C12", 
+        "Tstamp": "5B4BB91A", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C13", 
+        "Tstamp": "5B4C8415", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C14", 
+        "Tstamp": "5B4C843E", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C15", 
+        "Tstamp": "5B3AD087", 
+        "Value": "3n3"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C16", 
+        "Tstamp": "5B3AD5AB", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C17", 
+        "Tstamp": "5B3E1723", 
+        "Value": "4u7"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C18", 
+        "Tstamp": "5B3E8E3E", 
+        "Value": "2n2"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C19", 
+        "Tstamp": "5B3BD161", 
+        "Value": "1nF/NP0"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C20", 
+        "Tstamp": "5B3DC133", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C21", 
+        "Tstamp": "5C614D24", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C23", 
+        "Tstamp": "5C616680", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C24", 
+        "Tstamp": "5C616902", 
+        "Value": "1uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C26", 
+        "Tstamp": "5B1F6794", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C27", 
+        "Tstamp": "5B1F69A6", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C28", 
+        "Tstamp": "5B1F6A02", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb", 
+        "Footprint": "Mlab_L:FIR_0805", 
+        "Ref": "C29", 
+        "Tstamp": "5C589354", 
+        "Value": "NFM21PC105-1uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C31", 
+        "Tstamp": "5B1F6B7D", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C32", 
+        "Tstamp": "5C6D0EE7", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C34", 
+        "Tstamp": "5B36FE27", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C35", 
+        "Tstamp": "5B38C9AC", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C36", 
+        "Tstamp": "5C5FB0D4", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C39", 
+        "Tstamp": "5B3A9D6D", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C40", 
+        "Tstamp": "5B1D7340", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C42", 
+        "Tstamp": "5C6D0EB3", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C43", 
+        "Tstamp": "5B1E158F", 
+        "Value": "4u7"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C44", 
+        "Tstamp": "5B1D748A", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C47", 
+        "Tstamp": "5B38BB8A", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C50", 
+        "Tstamp": "5C6D0EB9", 
+        "Value": "10uF"
+    }, 
+    {
+        "Datasheet": "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb", 
+        "Footprint": "Mlab_L:FIR_0805", 
+        "Ref": "C52", 
+        "Tstamp": "5C6D0EF9", 
+        "Value": "NFM21PC105-1uF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C54", 
+        "Tstamp": "5C6D0EFF", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "C55", 
+        "Tstamp": "5C589368", 
+        "Value": "100nF"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_D:HAMAMATSU_S11773-02", 
+        "Ref": "D1", 
+        "Tstamp": "5C80A3E9", 
+        "Value": "S11773-02"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Diode_SMD:D_MiniMELF", 
+        "Ref": "D3", 
+        "Tstamp": "5C589333", 
+        "Value": "BZV55C-5,6V"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "F2", 
+        "Tstamp": "5C58939A", 
+        "Value": "2R2"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x02", 
+        "Ref": "J1", 
+        "Tstamp": "5C82097F", 
+        "Value": "HEADER_2x01"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x02", 
+        "Ref": "J2", 
+        "Tstamp": "5C594C24", 
+        "Value": "HEADER_2x01_PARALLEL"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x02", 
+        "Ref": "J3", 
+        "Tstamp": "5C5893A6", 
+        "Value": "HEADER_2x01_PARALLEL"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x01", 
+        "Ref": "J4", 
+        "Tstamp": "5C6A22D0", 
+        "Value": "HEADER_1x01"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x01", 
+        "Ref": "J5", 
+        "Tstamp": "5C6A319F", 
+        "Value": "HEADER_1x01"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x01", 
+        "Ref": "J6", 
+        "Tstamp": "5C6A33C1", 
+        "Value": "HEADER_1x01"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_1x01", 
+        "Ref": "J7", 
+        "Tstamp": "5C6A3943", 
+        "Value": "HEADER_1x01"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:Straight_2x01", 
+        "Ref": "J19", 
+        "Tstamp": "5B1E7269", 
+        "Value": "HEADER_2x01_PARALLEL"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Pin_Headers:SMD_2x03", 
+        "Ref": "J22", 
+        "Tstamp": "5B253FC7", 
+        "Value": "HEADER_2x03"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-1210", 
+        "Ref": "L1", 
+        "Tstamp": "5B1F6A96", 
+        "Value": "10uH - LQH32CN100K23L"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder", 
+        "Ref": "L3", 
+        "Tstamp": "5C6D0EA6", 
+        "Value": "DFE252012P-4R7M"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Mechanical:MountingHole_3mm", 
+        "Ref": "M1", 
+        "Tstamp": "5C4AF3DA", 
+        "Value": "HOLE"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Mechanical:MountingHole_3mm", 
+        "Ref": "M2", 
+        "Tstamp": "549D7628", 
+        "Value": "HOLE"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Mechanical:MountingHole_3mm", 
+        "Ref": "M3", 
+        "Tstamp": "5B3D3F17", 
+        "Value": "HOLE"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Mechanical:MountingHole_3mm", 
+        "Ref": "M4", 
+        "Tstamp": "5B3D3F18", 
+        "Value": "HOLE"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_Mechanical:BMI-S-210-F", 
+        "Ref": "M6", 
+        "Tstamp": "5B47DBA2", 
+        "Value": "BMI-S-210-F"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "RF_Shielding:Laird_Technologies_BMI-S-204-F_32.00x32.00mm", 
+        "Ref": "M8", 
+        "Tstamp": "5C71374D", 
+        "Value": "BMI-S-204-F"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "RF_Shielding:Laird_Technologies_BMI-S-204-F_32.00x32.00mm", 
+        "Ref": "M9", 
+        "Tstamp": "5C81F263", 
+        "Value": "BMI-S-204-F"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "RF_Shielding:Laird_Technologies_BMI-S-204-F_32.00x32.00mm", 
+        "Ref": "M10", 
+        "Tstamp": "5C81F2E9", 
+        "Value": "BMI-S-204-F"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R1", 
+        "Tstamp": "5B690004", 
+        "Value": "10R"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R2", 
+        "Tstamp": "5B46AAEC", 
+        "Value": "470R"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R3", 
+        "Tstamp": "5B4BB90E", 
+        "Value": "470R"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R4", 
+        "Tstamp": "5B4C8409", 
+        "Value": "470R"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R5", 
+        "Tstamp": "5B4C8432", 
+        "Value": "470R"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R6", 
+        "Tstamp": "5B3A3729", 
+        "Value": "10M"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R7", 
+        "Tstamp": "5B3A37A3", 
+        "Value": "10k"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R8", 
+        "Tstamp": "5B3AD48D", 
+        "Value": "1k"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R9", 
+        "Tstamp": "5B3ACFA9", 
+        "Value": "4k7"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R10", 
+        "Tstamp": "5B3AD63B", 
+        "Value": "1k"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R11", 
+        "Tstamp": "5B3E8EB4", 
+        "Value": "4k7"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R12", 
+        "Tstamp": "5B3BA8C4", 
+        "Value": "10k"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R13", 
+        "Tstamp": "5B3BD0FF", 
+        "Value": "2k2"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R15", 
+        "Tstamp": "5C613D02", 
+        "Value": "4k7"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R19", 
+        "Tstamp": "5C6165DE", 
+        "Value": "4k7"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R20", 
+        "Tstamp": "5B34D4AA", 
+        "Value": "10k"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R21", 
+        "Tstamp": "5B34D7C9", 
+        "Value": "10k"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R22", 
+        "Tstamp": "5C61685E", 
+        "Value": "4k7"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_R:SMD-0805", 
+        "Ref": "R23", 
+        "Tstamp": "5B1E1A11", 
+        "Value": "10k"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_IO:SOIC-8_3.9x4.9mm_Pitch1.27mm", 
+        "Ref": "U1", 
+        "Tstamp": "5B39C1E6", 
+        "Value": "OPA2314"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_IO:SOIC-8_3.9x4.9mm_Pitch1.27mm", 
+        "Ref": "U2", 
+        "Tstamp": "5B39C25C", 
+        "Value": "OPA2314"
+    }, 
+    {
+        "Datasheet": "http://www.intersil.com/content/dam/Intersil/documents/fn75/fn7599.pdf", 
+        "Footprint": "Package_TO_SOT_SMD:SOT-23", 
+        "Ref": "U3", 
+        "Tstamp": "5B3DC106", 
+        "Value": "ISL21080DIH312Z-TK  1V25"
+    }, 
+    {
+        "Datasheet": "http://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf", 
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5_HandSoldering", 
+        "Ref": "U4", 
+        "Tstamp": "5B3AFE4C", 
+        "Value": "TS7211"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5_HandSoldering", 
+        "Ref": "U5", 
+        "Tstamp": "5B3B85BF", 
+        "Value": "TS5A4594"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Package_TO_SOT_SMD:SOT-23-5", 
+        "Ref": "U8", 
+        "Tstamp": "5C6D0EAC", 
+        "Value": "TPS613222ADBV"
+    }, 
+    {
+        "Datasheet": "http://www.atmel.com/Images/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf", 
+        "Footprint": "Package_QFP:TQFP-44_10x10mm_P0.8mm", 
+        "Ref": "U10", 
+        "Tstamp": "5B17AB5A", 
+        "Value": "ATMEGA1284P-AU"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_IO:TSSOP-10_3x3mm_Pitch0.5mm", 
+        "Ref": "U11", 
+        "Tstamp": "5B36B76C", 
+        "Value": "PCF85263A"
+    }, 
+    {
+        "Datasheet": "", 
+        "Footprint": "Mlab_XTAL:ABS07", 
+        "Ref": "Y2", 
+        "Tstamp": "5B36B778", 
+        "Value": "ABS07-120-32.768KHZ-T"
+    }
+]
