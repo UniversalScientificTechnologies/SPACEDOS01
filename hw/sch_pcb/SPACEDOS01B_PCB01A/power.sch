@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:SPACEDOS01B_PCB01A-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -190,7 +190,7 @@ AR Path="/5C4AEDD8/5C6D0EF9" Ref="C?"  Part="1"
 AR Path="/5C69BCB4/5C6D0EF9" Ref="C52"  Part="1" 
 F 0 "C52" H 8950 3705 50  0000 C CNN
 F 1 "NFM21PC105-1uF" H 8950 3614 50  0000 C CNN
-F 2 "Mlab_L:FIR1" V 8950 3400 50  0001 C CNN
+F 2 "Mlab_L:FIR_0805" V 8950 3400 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 8950 3400 50  0001 C CNN
 	1    8950 3400
 	1    0    0    -1  
@@ -246,17 +246,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 3500 8950 3800
 $Comp
-L MLAB_HEADER:HEADER_2x01_PARALLEL J1
-U 1 1 5C5733E7
-P 1750 2500
-F 0 "J1" H 2050 2500 60  0000 C CNN
-F 1 "HEADER_2x01_PARALLEL" H 1667 2369 60  0001 C CNN
-F 2 "Mlab_Pin_Headers:Straight_1x02" H 1750 2500 60  0001 C CNN
-F 3 "" H 1750 2500 60  0000 C CNN
-	1    1750 2500
-	-1   0    0    1   
-$EndComp
-$Comp
 L SPACEDOS01B_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue D?
 U 1 1 5C589333
 P 2800 3550
@@ -295,7 +284,7 @@ AR Path="/5C4AEDD8/5C589354" Ref="C?"  Part="1"
 AR Path="/5C69BCB4/5C589354" Ref="C29"  Part="1" 
 F 0 "C29" H 3450 3755 50  0000 C CNN
 F 1 "NFM21PC105-1uF" H 3450 3664 50  0000 C CNN
-F 2 "Mlab_L:FIR1" V 3450 3450 50  0001 C CNN
+F 2 "Mlab_L:FIR_0805" V 3450 3450 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3450 3450 50  0001 C CNN
 	1    3450 3450
 	1    0    0    -1  
@@ -374,7 +363,7 @@ P 2450 3350
 AR Path="/5C4AEDD8/5C58939A" Ref="F?"  Part="1" 
 AR Path="/5C69BCB4/5C58939A" Ref="F2"  Part="1" 
 F 0 "F2" V 2225 3350 50  0000 C CNN
-F 1 "SR010-15 100mA " V 2300 3500 50  0000 C CNN
+F 1 "2R2" V 2300 3350 50  0000 C CNN
 F 2 "Mlab_R:SMD-0805" H 2500 3150 50  0001 L CNN
 F 3 "" H 2450 3350 50  0001 C CNN
 	1    2450 3350
@@ -469,5 +458,17 @@ Wire Wire Line
 	3850 2850 3850 3350
 Wire Wire Line
 	2000 3350 2300 3350
-NoConn ~ 2000 2500
+$Comp
+L MLAB_HEADER:HEADER_2x01 J1
+U 1 1 5C82097F
+P 1750 2300
+F 0 "J1" H 1750 2441 60  0000 C CNN
+F 1 "HEADER_2x01" H 1750 2441 60  0001 C CNN
+F 2 "Mlab_Pin_Headers:Straight_1x02" H 1750 2300 60  0001 C CNN
+F 3 "" H 1750 2300 60  0000 C CNN
+	1    1750 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 2300
+NoConn ~ 2000 2300
 $EndSCHEMATC

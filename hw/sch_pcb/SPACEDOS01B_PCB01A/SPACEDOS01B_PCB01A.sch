@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:SPACEDOS01B_PCB01A-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -635,7 +635,7 @@ L Device:CP C1
 U 1 1 5B46AE4B
 P 1400 1150
 F 0 "C1" H 1518 1196 50  0000 L CNN
-F 1 "47uF" H 1518 1105 50  0000 L CNN
+F 1 "22uF" H 1518 1105 50  0000 L CNN
 F 2 "Mlab_C:TantalC_SizeC_Reflow" H 1438 1000 50  0001 C CNN
 F 3 "~" H 1400 1150 50  0001 C CNN
 	1    1400 1150
@@ -1328,8 +1328,6 @@ Text Label 10000 5150 0    60   ~ 0
 Trace
 Text GLabel 10550 5150 2    60   Input ~ 0
 PB0
-Wire Wire Line
-	9400 650  9400 700 
 $Comp
 L MLAB_MECHANICAL:HOLE M8
 U 1 1 5C71374D
@@ -1342,10 +1340,7 @@ F 3 "" H 9200 750 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9400 650  9200 650 
-Wire Wire Line
 	9200 650  9200 700 
-Connection ~ 9400 650 
 $Comp
 L MLAB_MECHANICAL:HOLE M9
 U 1 1 5C81F263
@@ -1378,8 +1373,6 @@ Wire Wire Line
 Connection ~ 9000 650 
 Wire Wire Line
 	9000 650  8800 650 
-Wire Wire Line
-	9400 650  10000 650 
 $Comp
 L Device:D_Photo D1
 U 1 1 5C80A3E9
@@ -1395,4 +1388,6 @@ Wire Wire Line
 	1900 4350 1900 4750
 Wire Wire Line
 	1000 4350 1500 4350
+Wire Wire Line
+	9200 650  10000 650 
 $EndSCHEMATC
