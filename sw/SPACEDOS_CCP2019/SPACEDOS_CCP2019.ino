@@ -2,6 +2,7 @@ String githash = "$Id$";
 //
 /*
   SPACEDOS for CCP2019
+  for HW: SPACEDOS01A 
 
   Compiled with: Arduino 1.8.5
 
@@ -412,7 +413,7 @@ void loop()
     count++;
     daylycount++;
 
-    if (daylycount > 4) //!!! ((60*60*24)/15))
+    if (daylycount == ((60*60*24)/15)) // One day of measurements
     {
       // Almanac data for Beacon
 
