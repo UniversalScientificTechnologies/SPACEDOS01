@@ -1,4 +1,4 @@
-String githash = "$Id$";
+String githash = "$Id:$";
 //
 /*
   SPACEDOS for CCP2019
