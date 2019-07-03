@@ -1,6 +1,8 @@
-# SPACEDOS
+# SPACEDOS01B
 
-![1st manufactured PCB](1stPCB.jpg "PCB")
+![SPACEDOS01B device from bottom side](doc/src/img/SPACEDOS01B_bottom.jpg "PCB")
+![SPACEDOS01B device from top side](doc/src/img/SPACEDOS01B_top.jpg "PCB")
 
-It is intended for measurement of cosmic radiation and dosimetry in mixed ionization fields on board satellites. 
+
+The device is intended for measurement of cosmic radiation in mixed ionization fields on board satellites. 
 
