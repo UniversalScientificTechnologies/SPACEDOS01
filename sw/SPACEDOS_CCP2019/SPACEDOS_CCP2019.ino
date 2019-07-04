@@ -2,6 +2,7 @@ String githash = "$Id$";
 //
 /*
   SPACEDOS for CCP2019
+  for HW: SPACEDOS01A 
 
   Compiled with: Arduino 1.8.5
 
@@ -48,8 +49,8 @@ TX1/INT1 (D 11) PD3 17|        |24 PC2 (D 18) TCK
 #include <avr/wdt.h>
 
 #define TRACE     0    // PB0
-#define PC7       23   // PC7
-#define PC3       19   // PC3
+#define GPO       11   // PD3
+#define GPI       10   // PD2
 
 #define CHANNELS 512   // number of channels in buffer for histogram, including negative numbers
 #define RANGE 252      // Dynamic range in channels
@@ -105,9 +106,9 @@ void setup()
   cbi(ADCSRA, 0);
 
   pinMode(TRACE, OUTPUT);   // TRACE for peak detetor
-  pinMode(PC7, INPUT);      // spare input port
-  digitalWrite(PC3, LOW);   // turn the output port low
-  pinMode(PC3, OUTPUT);     // spare output port
+  pinMode(GPI, INPUT);      // spare input port
+  digitalWrite(GPO, LOW);   // turn the output port low
+  pinMode(GPO, OUTPUT);     // spare output port
  
   digitalWrite(TRACE, LOW);
 
@@ -412,7 +413,7 @@ void loop()
     count++;
     daylycount++;
 
-    if (daylycount > 4) //!!! ((60*60*24)/15))
+    if (daylycount == ((60*60*24)/15)) // One day of measurements
     {
       // Almanac data for Beacon
 
