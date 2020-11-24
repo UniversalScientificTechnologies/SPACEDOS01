@@ -1,0 +1,2349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Chroust\stare\UST_G\SPACEDOS01\hw\sch_pcb\SPACEDOS01A_PCB01B\SPACEDOS01A_PCB01B.kicad_sch</source>
+    <date>24.11.2020 7:07:33</date>
+    <tool>Eeschema (5.99.0-6591-gee6c8b60ac)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NAME</title>
+        <company>Mlab www.mlab.cz</company>
+        <rev>REV</rev>
+        <date>%F</date>
+        <source>SPACEDOS01A_PCB01B.kicad_sch</source>
+        <comment number="1" value="VERSION"/>
+        <comment number="2" value="Short description \nTwo lines are maximum"/>
+        <comment number="3" value="nickname &lt;email@example.com&gt;"/>
+        <comment number="4" value="BSD"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>cpu.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>47uF</value>
+      <footprint>Mlab_C:TantalC_SizeC_Reflow</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f8867</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="CP-Device" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f8867"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b46ae4b</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c52c88c</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>4u7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b52</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b52"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b39c727</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b46aed9</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1pFNP0 251R15S1R0AV4E</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b9f</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b9f"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a36ae</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b46f2e3</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4bb914</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c840f</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c8438</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a3816</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b46f367</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4bb91a</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c8415</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c843e</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>3n3</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b47</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b47"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3ad087</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3ad5ab</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>4u7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b52</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b52"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3e1723</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>2n2</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b46</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b46"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3e8e3e</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>1nF/NP0</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8ba6</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8ba6"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3bd161</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3dc133</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c614d24</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c616680</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>1uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b50</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b50"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c616902</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>S2744-09</value>
+      <footprint>Mlab_D:HAMAMATSU_S2744-09</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Photo" description="Photodiode"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a05a5</tstamp>
+    </comp>
+    <comp ref="M1">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c4af3da</tstamp>
+    </comp>
+    <comp ref="M2">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-0000549d7628</tstamp>
+    </comp>
+    <comp ref="M3">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3d3f17</tstamp>
+    </comp>
+    <comp ref="M4">
+      <value>HOLE</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3d3f18</tstamp>
+    </comp>
+    <comp ref="M5">
+      <value>BMI-S-210-F</value>
+      <footprint>Mlab_Mechanical:BMI-S-210-F</footprint>
+      <fields>
+        <field name="UST_ID">5c70984312875079b91f873d</field>
+      </fields>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="UST_ID" value="5c70984312875079b91f873d"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c7015d6</tstamp>
+    </comp>
+    <comp ref="M6">
+      <value>BMI-S-210-F</value>
+      <footprint>Mlab_Mechanical:BMI-S-210-F</footprint>
+      <fields>
+        <field name="UST_ID">5c70984312875079b91f873d</field>
+      </fields>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="UST_ID" value="5c70984312875079b91f873d"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b47dba2</tstamp>
+    </comp>
+    <comp ref="M7">
+      <value>BMI-S-210-F</value>
+      <footprint>Mlab_Mechanical:BMI-S-210-F</footprint>
+      <fields>
+        <field name="UST_ID">5c70984312875079b91f873d</field>
+      </fields>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="UST_ID" value="5c70984312875079b91f873d"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c564e7a</tstamp>
+    </comp>
+    <comp ref="M8">
+      <value>BMI-S-204-F</value>
+      <footprint>RF_Shielding:Laird_Technologies_BMI-S-204-F_32.00x32.00mm</footprint>
+      <fields>
+        <field name="UST_ID">5c72751c1287500b4e11301a</field>
+      </fields>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="UST_ID" value="5c72751c1287500b4e11301a"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c71374d</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f896d</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f896d"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b690004</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>470R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f8986</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f8986"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b46aaec</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>470R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f8986</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f8986"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4bb90e</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f8986</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f8986"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c8409</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>470R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f8986</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f8986"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b4c8432</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10M</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8aae</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984712875079b91f8aae"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a3729</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f899f</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a37a3</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f895c</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f895c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3ad48d</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4k7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3acfa9</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f895c</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f895c"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3ad63b</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>4k7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3e8eb4</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f899f</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3ba8c4</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>2k2</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8990</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8990"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3bd0ff</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>4k7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c613d02</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>4k7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6165de</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>4k7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8995</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984612875079b91f8995"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005c61685e</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>OPA2314</value>
+      <footprint>Mlab_IO:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f879b</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="AD8692" description="Op amp."/>
+      <property name="UST_ID" value="5c70984412875079b91f879b"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b39c1e6</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>OPA2314</value>
+      <footprint>Mlab_IO:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f879b</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="AD8692" description="Op amp."/>
+      <property name="UST_ID" value="5c70984412875079b91f879b"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b39c25c</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>ISL21080DIH312Z-TK  1V25</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/fn75/fn7599.pdf</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b7a</field>
+      </fields>
+      <libsource lib="Reference_Voltage" part="ISL21070CIH320Z-TK" description="2.0V 25μA Micropower Voltage Reference, SOT-23"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b7a"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3dc106</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>TS7211</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b5b</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OP179GRT" description="Single Rail-to-Rail High Output Current Operational Amplifiers, SOT-23-5"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b5b"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3afe4c</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>TS5A4594</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5_HandSoldering</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8a0d</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="TS5A4594" description=""/>
+      <property name="UST_ID" value="5c70984612875079b91f8a0d"/>
+      <property name="Název listu" value=""/>
+      <property name="Sheet file" value="C:/Chroust/stare/UST_G/SPACEDOS01/hw/sch_pcb/SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3b85bf</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1f6794</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1f69a6</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1f6a02</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>15pF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b32</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b32"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b2480a8</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1f6b7d</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>15pF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b32</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b32"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b24828c</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b36fe27</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b38c9ac</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b3a9d6d</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1d7340</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>4u7</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b52</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b52"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1e158f</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1d748a</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b38bb8a</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>HEADER_1x01</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x01</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x01" description="1x01 2.54 mm pitch header"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6a22d0</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>HEADER_1x01</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x01</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x01" description="1x01 2.54 mm pitch header"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6a319f</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>HEADER_1x01</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x01</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x01" description="1x01 2.54 mm pitch header"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6a33c1</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>HEADER_1x01</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x01</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_1x01" description="1x01 2.54 mm pitch header"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6a3943</tstamp>
+    </comp>
+    <comp ref="J19">
+      <value>HEADER_2x01_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Straight_2x01</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x01_PARALLEL" description="2x01 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1e7269</tstamp>
+    </comp>
+    <comp ref="J22">
+      <value>HEADER_2x03</value>
+      <footprint>Mlab_Pin_Headers:SMD_2x03</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x03" description="2x03 2.54 mm pitch header"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b253fc7</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>10uH - LQH32CN100K23L</value>
+      <footprint>Mlab_R:SMD-1210</footprint>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f87ff</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="L-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f87ff"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1f6a96</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f899f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="R-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b34d4aa</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f899f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="R-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b34d7c9</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>10k</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f899f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="R-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b1e1a11</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>ATMEGA1284P-AU</value>
+      <footprint>Package_QFP:TQFP-44_10x10mm_P0.8mm</footprint>
+      <datasheet>http://www.atmel.com/Images/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f888e</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="ATMEGA1284P-AU-atmel-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f888e"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b17ab5a</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>PCF85263A</value>
+      <footprint>Mlab_IO:TSSOP-10_3x3mm_Pitch0.5mm</footprint>
+      <fields>
+        <field name="UST_ID">5c70984612875079b91f8a0c</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="PCF85263A" description="RTC"/>
+      <property name="UST_ID" value="5c70984612875079b91f8a0c"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b36b76c</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>16MHz</value>
+      <footprint>Mlab_XTAL:Crystal_HC49-4H_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b10</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="UST_ID" value="5c70984712875079b91f8b10"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b257330</tstamp>
+    </comp>
+    <comp ref="Y2">
+      <value>ABS07-120-32.768KHZ-T</value>
+      <footprint>Mlab_XTAL:ABS07</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b1b</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="Crystal-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b1b"/>
+      <property name="Název listu" value="cpu"/>
+      <property name="Sheet file" value="cpu.kicad_sch"/>
+      <sheetpath names="/cpu/" tstamps="/00000000-0000-0000-0000-00005c4aedd8/"/>
+      <tstamp>00000000-0000-0000-0000-00005b36b778</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5fa3d4</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6c894e</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>NFM21PC105-1uF</value>
+      <footprint>Mlab_L:FIR1</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f880f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f880f"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c589354</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0ee7</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5fb0d4</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6c450e</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0eb3</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>NFM21PC105-1uF</value>
+      <footprint>Mlab_L:FIR1</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f880f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f880f"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6be26e</tstamp>
+    </comp>
+    <comp ref="C48">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6be27c</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6c45c5</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>10uF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bbe</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bbe"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0eb9</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>NFM21PC105-1uF</value>
+      <footprint>Mlab_L:FIR1</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f880f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f880f"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6cda68</tstamp>
+    </comp>
+    <comp ref="C52">
+      <value>NFM21PC105-1uF</value>
+      <footprint>Mlab_L:FIR1</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f880f</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984412875079b91f880f"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0ef9</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6cda6e</tstamp>
+    </comp>
+    <comp ref="C54">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0eff</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>100nF</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5c70984712875079b91f8b4c</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984712875079b91f8b4c"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c589368</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BZV55C-5,6V</value>
+      <footprint>Diode_SMD:D_MiniMELF</footprint>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f88b1</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984512875079b91f88b1"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6be250</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>BZV55C-5,6V</value>
+      <footprint>Diode_SMD:D_MiniMELF</footprint>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f88b1</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5c70984512875079b91f88b1"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c589333</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>SR010-15 100mA </value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5cc331a7128750448e54e8fa</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5cc331a7128750448e54e8fa"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6be2a0</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>SR010-15 100mA </value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <fields>
+        <field name="UST_ID">5cc331a7128750448e54e8fa</field>
+      </fields>
+      <libsource lib="SPACEDOS01A_PCB01A-rescue" part="Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue" description=""/>
+      <property name="UST_ID" value="5cc331a7128750448e54e8fa"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c58939a</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>HEADER_2x01_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x02</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x01_PARALLEL" description="2x01 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5733e7</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>HEADER_2x01_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x02</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x01_PARALLEL" description="2x01 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c594c24</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>HEADER_2x01_PARALLEL</value>
+      <footprint>Mlab_Pin_Headers:Straight_1x02</footprint>
+      <libsource lib="MLAB_HEADER" part="HEADER_2x01_PARALLEL" description="2x01 2.54 mm pitch header, 2 pins next to each other are connected"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5893a6</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>DFE252012P-4R7M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5cc3309d128750448e54e8d8</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="UST_ID" value="5cc3309d128750448e54e8d8"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6c1074</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>DFE252012P-4R7M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5cc3309d128750448e54e8d8</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <property name="UST_ID" value="5cc3309d128750448e54e8d8"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0ea6</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>-</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c590743</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>-</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5d41c1</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>-</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5c41f4</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>0R</value>
+      <footprint>Mlab_R:SMD-0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="UST_ID">5c70984512875079b91f896b</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="UST_ID" value="5c70984512875079b91f896b"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c5d893e</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>TPS613221ADBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="UST_ID">5c7100db12875079fd76e317</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="TPS61322xA" description="menic SOT23-5"/>
+      <property name="UST_ID" value="5c7100db12875079fd76e317"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6c37a0</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>TPS613222ADBV</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="UST_ID">5c7190ae1287500b4e112e04</field>
+      </fields>
+      <libsource lib="MLAB_IO" part="TPS61322xA" description="menic SOT23-5"/>
+      <property name="UST_ID" value="5c7190ae1287500b4e112e04"/>
+      <property name="Název listu" value="power"/>
+      <property name="Sheet file" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/00000000-0000-0000-0000-00005c69bcb4/"/>
+      <tstamp>00000000-0000-0000-0000-00005c6d0eac</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="OP179GRT">
+      <description>Single Rail-to-Rail High Output Current Operational Amplifiers, SOT-23-5</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OP179GRT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/OP179_279.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="V+" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V-" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Photo">
+      <description>Photodiode</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Photo</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_1x01">
+      <description>1x01 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_1x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x01_PARALLEL">
+      <description>2x01 2.54 mm pitch header, 2 pins next to each other are connected</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x01_PARALLEL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_HEADER" part="HEADER_2x03">
+      <description>2x03 2.54 mm pitch header</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HEADER_2x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="AD8692">
+      <description>Op amp.</description>
+      <docs>op_amps/tl071.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD8692</field>
+        <field name="Datasheet">op_amps/tl071.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="passive"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="PCF85263A">
+      <description>RTC</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCF85263A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OSCI" type="input"/>
+        <pin num="2" name="OSCO" type="input"/>
+        <pin num="3" name="VBAT" type="input"/>
+        <pin num="4" name="TS" type="input"/>
+        <pin num="5" name="GND" type="input"/>
+        <pin num="6" name="SDA" type="input"/>
+        <pin num="7" name="SCL" type="input"/>
+        <pin num="8" name="CLK" type="input"/>
+        <pin num="9" name="INTA" type="input"/>
+        <pin num="10" name="VDD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="TPS61322xA">
+      <description>menic SOT23-5</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61322xA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="unspc"/>
+        <pin num="2" name="GND" type="unspc"/>
+        <pin num="4" name="Vout" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_IO" part="TS5A4594">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TS5A4594</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COM" type="passive"/>
+        <pin num="2" name="NO" type="passive"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="IN" type="BiDi"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MLAB_MECHANICAL" part="HOLE">
+      <fields>
+        <field name="Reference">M</field>
+        <field name="Value">HOLE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Reference_Voltage" part="ISL21070CIH320Z-TK">
+      <description>2.0V 25μA Micropower Voltage Reference, SOT-23</description>
+      <docs>http://www.intersil.com/content/dam/Intersil/documents/fn75/fn7599.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ISL21070CIH320Z-TK</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://www.intersil.com/content/dam/Intersil/documents/fn75/fn7599.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="power_in"/>
+        <pin num="2" name="Vout" type="power_out"/>
+        <pin num="3" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="ATMEGA1284P-AU-atmel-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATMEGA1284P-AU-atmel-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+        <field name="Footprint">TQFP44</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT13/MOSI)PB5" type="BiDi"/>
+        <pin num="2" name="(PCINT14/MISO)PB6" type="BiDi"/>
+        <pin num="3" name="(PCINT15/SCK)PB7" type="BiDi"/>
+        <pin num="4" name="~RESET" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="XTAL2" type="BiDi"/>
+        <pin num="8" name="XTAL1" type="BiDi"/>
+        <pin num="9" name="(PCINT24/RXD0)PD0" type="BiDi"/>
+        <pin num="10" name="(PCINT25/TXD0)PD1" type="BiDi"/>
+        <pin num="11" name="(PCINT26/RXD1/INT0)PD2" type="BiDi"/>
+        <pin num="12" name="(PCINT27/TXD1/INT1)PD3" type="BiDi"/>
+        <pin num="13" name="(PCINT28/XCK1/OC1B)PD4" type="BiDi"/>
+        <pin num="14" name="(PCINT294/OC1A)PD5" type="BiDi"/>
+        <pin num="15" name="(PCINT30/OC2B/ICP)PD6" type="BiDi"/>
+        <pin num="16" name="(PCINT31/OC2A)PD7" type="BiDi"/>
+        <pin num="17" name="VCC" type="power_in"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="19" name="(PCINT16/SCL)PC0" type="BiDi"/>
+        <pin num="20" name="(PCINT17/SDA)PC1" type="BiDi"/>
+        <pin num="21" name="(PCINT18/TCK)PC2" type="BiDi"/>
+        <pin num="22" name="(PCINT19/TMS)PC3" type="BiDi"/>
+        <pin num="23" name="(PCINT20/TDO)PC4" type="BiDi"/>
+        <pin num="24" name="(PCINT21/TDI)PC5" type="BiDi"/>
+        <pin num="25" name="(PCINT22/TOSC1)PC6" type="BiDi"/>
+        <pin num="26" name="(PCINT23/TOSC2)PC7" type="BiDi"/>
+        <pin num="27" name="AVCC" type="power_in"/>
+        <pin num="28" name="GND" type="power_in"/>
+        <pin num="29" name="AREF" type="power_in"/>
+        <pin num="30" name="(PCINT7/ADC7)PA7" type="BiDi"/>
+        <pin num="31" name="(PCINT6/ADC6)PA6" type="BiDi"/>
+        <pin num="32" name="(PCINT5/ADC5)PA5" type="BiDi"/>
+        <pin num="33" name="(PCINT4/ADC4)PA4" type="BiDi"/>
+        <pin num="34" name="(PCINT3/ADC3)PA3" type="BiDi"/>
+        <pin num="35" name="(PCINT2/ADC2)PA2" type="BiDi"/>
+        <pin num="36" name="(PCINT1/ADC1)PA1" type="BiDi"/>
+        <pin num="37" name="(PCINT0/ADC0)PA0" type="BiDi"/>
+        <pin num="38" name="VCC" type="power_in"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="(PCINT8/T0/XCK)PB0" type="BiDi"/>
+        <pin num="41" name="(PCINT9/CLKO/T1)PB1" type="BiDi"/>
+        <pin num="42" name="(PCINT10/AIN0/INT2)PB2" type="BiDi"/>
+        <pin num="43" name="(PCINT11/AIN1/OC0)PB3" type="BiDi"/>
+        <pin num="44" name="(PCINT12/OC0B/~SS~)PB4" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="CP-Device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="Crystal-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="L-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SPACEDOS01A_PCB01A-rescue" part="R-device-DATALOGGER01A-rescue-CCP2019V01A-rescue">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-device-DATALOGGER01A-rescue-CCP2019V01A-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="MLAB_HEADER">
+      <uri>C:\Chroust\stare\MLAB_G\kicad-mlab\symbols/MLAB_HEADER.lib</uri>
+    </library>
+    <library logical="MLAB_IO">
+      <uri>C:\Chroust\stare\MLAB_G\kicad-mlab\symbols/MLAB_IO.kicad_sym</uri>
+    </library>
+    <library logical="MLAB_MECHANICAL">
+      <uri>C:\Chroust\stare\MLAB_G\kicad-mlab\symbols/MLAB_MECHANICAL.lib</uri>
+    </library>
+    <library logical="Reference_Voltage">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Reference_Voltage.lib</uri>
+    </library>
+    <library logical="SPACEDOS01A_PCB01A-rescue">
+      <uri>C:\Chroust\stare\UST_G\SPACEDOS01\hw\sch_pcb\SPACEDOS01A_PCB01B/SPACEDOS01A_PCB01B-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C1" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="C34" pin="1"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C39" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C47" pin="1"/>
+      <node ref="C51" pin="3" pinfunction="3"/>
+      <node ref="C53" pin="1"/>
+      <node ref="J22" pin="2"/>
+      <node ref="L1" pin="1" pinfunction="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R20" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U10" pin="17" pinfunction="VCC"/>
+      <node ref="U10" pin="38" pinfunction="VCC"/>
+      <node ref="U10" pin="5" pinfunction="VCC"/>
+      <node ref="U11" pin="10" pinfunction="VDD"/>
+      <node ref="U11" pin="3" pinfunction="VBAT"/>
+      <node ref="U3" pin="1" pinfunction="Vin"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C52" pin="3" pinfunction="3"/>
+      <node ref="C54" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="3" name="/A">
+      <node ref="C5" pin="2"/>
+      <node ref="D2" pin="2" pinfunction="A"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="2" pinfunction="-"/>
+    </net>
+    <net code="4" name="/K">
+      <node ref="C24" pin="1"/>
+      <node ref="D2" pin="1" pinfunction="K"/>
+      <node ref="R22" pin="1"/>
+    </net>
+    <net code="5" name="/VCC1">
+      <node ref="C11" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="8" pinfunction="V+"/>
+    </net>
+    <net code="6" name="/VCC2">
+      <node ref="C12" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="8" pinfunction="V+"/>
+    </net>
+    <net code="7" name="/VCC3">
+      <node ref="C13" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U4" pin="2" pinfunction="V+"/>
+    </net>
+    <net code="8" name="/VCC4">
+      <node ref="C14" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="U5" pin="5" pinfunction="VCC"/>
+    </net>
+    <net code="9" name="/cpu/AVCC">
+      <node ref="C31" pin="1"/>
+      <node ref="L1" pin="2" pinfunction="2"/>
+      <node ref="U10" pin="27" pinfunction="AVCC"/>
+    </net>
+    <net code="10" name="/cpu/PB5">
+      <node ref="J22" pin="4"/>
+      <node ref="U10" pin="1" pinfunction="(PCINT13/MOSI)PB5"/>
+    </net>
+    <net code="11" name="/cpu/PB6">
+      <node ref="J22" pin="1"/>
+      <node ref="U10" pin="2" pinfunction="(PCINT14/MISO)PB6"/>
+    </net>
+    <net code="12" name="/cpu/PB7">
+      <node ref="J22" pin="3"/>
+      <node ref="U10" pin="3" pinfunction="(PCINT15/SCK)PB7"/>
+    </net>
+    <net code="13" name="/cpu/PC0">
+      <node ref="R21" pin="1"/>
+      <node ref="U10" pin="19" pinfunction="(PCINT16/SCL)PC0"/>
+      <node ref="U11" pin="7" pinfunction="SCL"/>
+    </net>
+    <net code="14" name="/cpu/PC1">
+      <node ref="R20" pin="1"/>
+      <node ref="U10" pin="20" pinfunction="(PCINT17/SDA)PC1"/>
+      <node ref="U11" pin="6" pinfunction="SDA"/>
+    </net>
+    <net code="15" name="/cpu/PC3">
+      <node ref="J5" pin="1"/>
+      <node ref="U10" pin="22" pinfunction="(PCINT19/TMS)PC3"/>
+    </net>
+    <net code="16" name="/cpu/PC7">
+      <node ref="J4" pin="1"/>
+      <node ref="U10" pin="26" pinfunction="(PCINT23/TOSC2)PC7"/>
+    </net>
+    <net code="17" name="/cpu/RST#">
+      <node ref="C43" pin="2"/>
+      <node ref="J19" pin="1"/>
+      <node ref="J19" pin="2"/>
+    </net>
+    <net code="18" name="/cpu/RST#_P">
+      <node ref="C43" pin="1"/>
+      <node ref="J22" pin="5"/>
+      <node ref="R23" pin="1"/>
+      <node ref="U10" pin="4" pinfunction="~RESET"/>
+    </net>
+    <net code="19" name="/cpu/RX0">
+      <node ref="J6" pin="1"/>
+      <node ref="U10" pin="9" pinfunction="(PCINT24/RXD0)PD0"/>
+    </net>
+    <net code="20" name="/cpu/TX0">
+      <node ref="J7" pin="1"/>
+      <node ref="U10" pin="10" pinfunction="(PCINT25/TXD0)PD1"/>
+    </net>
+    <net code="21" name="/power/3">
+      <node ref="F2" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="22" name="/power/5">
+      <node ref="F1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="23" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C29" pin="2" pinfunction="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C42" pin="2"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C45" pin="2" pinfunction="2"/>
+      <node ref="C47" pin="2"/>
+      <node ref="C48" pin="2"/>
+      <node ref="C49" pin="2"/>
+      <node ref="C50" pin="2"/>
+      <node ref="C51" pin="2" pinfunction="2"/>
+      <node ref="C52" pin="2" pinfunction="2"/>
+      <node ref="C53" pin="2"/>
+      <node ref="C54" pin="2"/>
+      <node ref="C55" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="D1" pin="2" pinfunction="A"/>
+      <node ref="D3" pin="2" pinfunction="A"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J22" pin="6"/>
+      <node ref="M1" pin="1"/>
+      <node ref="M2" pin="1"/>
+      <node ref="M3" pin="1"/>
+      <node ref="M4" pin="1"/>
+      <node ref="M5" pin="1"/>
+      <node ref="M6" pin="1"/>
+      <node ref="M7" pin="1"/>
+      <node ref="M8" pin="1"/>
+      <node ref="U1" pin="4" pinfunction="V-"/>
+      <node ref="U10" pin="18" pinfunction="GND"/>
+      <node ref="U10" pin="28" pinfunction="GND"/>
+      <node ref="U10" pin="39" pinfunction="GND"/>
+      <node ref="U10" pin="6" pinfunction="GND"/>
+      <node ref="U11" pin="5" pinfunction="GND"/>
+      <node ref="U2" pin="4" pinfunction="V-"/>
+      <node ref="U3" pin="3" pinfunction="GND"/>
+      <node ref="U4" pin="5" pinfunction="V-"/>
+      <node ref="U5" pin="3" pinfunction="GND"/>
+      <node ref="U6" pin="2" pinfunction="GND"/>
+      <node ref="U8" pin="2" pinfunction="GND"/>
+    </net>
+    <net code="24" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U1" pin="5" pinfunction="+"/>
+    </net>
+    <net code="25" name="Net-(C10-Pad2)">
+      <node ref="C10" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="26" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="27" name="Net-(C15-Pad2)">
+      <node ref="C15" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="U1" pin="6" pinfunction="-"/>
+    </net>
+    <net code="28" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="29" name="Net-(C18-Pad1)">
+      <node ref="C18" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U4" pin="3" pinfunction="+"/>
+      <node ref="U5" pin="1" pinfunction="COM"/>
+    </net>
+    <net code="30" name="Net-(C18-Pad2)">
+      <node ref="C18" pin="2"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U2" pin="2" pinfunction="-"/>
+    </net>
+    <net code="31" name="Net-(C19-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U2" pin="5" pinfunction="+"/>
+    </net>
+    <net code="32" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="33" name="Net-(C21-Pad1)">
+      <node ref="C21" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="34" name="Net-(C22-Pad1)">
+      <node ref="C22" pin="1"/>
+      <node ref="C45" pin="1" pinfunction="1"/>
+      <node ref="D1" pin="1" pinfunction="K"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="35" name="Net-(C29-Pad1)">
+      <node ref="C29" pin="1" pinfunction="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="D3" pin="1" pinfunction="K"/>
+      <node ref="F2" pin="1"/>
+    </net>
+    <net code="36" name="Net-(C29-Pad3)">
+      <node ref="C29" pin="3" pinfunction="3"/>
+      <node ref="C55" pin="1"/>
+      <node ref="R27" pin="2"/>
+    </net>
+    <net code="37" name="Net-(C30-Pad1)">
+      <node ref="C30" pin="1"/>
+      <node ref="U10" pin="7" pinfunction="XTAL2"/>
+      <node ref="Y1" pin="1" pinfunction="1"/>
+    </net>
+    <net code="38" name="Net-(C33-Pad1)">
+      <node ref="C33" pin="1"/>
+      <node ref="U10" pin="8" pinfunction="XTAL1"/>
+      <node ref="Y1" pin="2" pinfunction="2"/>
+    </net>
+    <net code="39" name="Net-(C38-Pad1)">
+      <node ref="C38" pin="1"/>
+      <node ref="C49" pin="1"/>
+      <node ref="C51" pin="1" pinfunction="1"/>
+      <node ref="U6" pin="4" pinfunction="Vout"/>
+    </net>
+    <net code="40" name="Net-(C40-Pad1)">
+      <node ref="C40" pin="1"/>
+      <node ref="C44" pin="1"/>
+      <node ref="U10" pin="29" pinfunction="AREF"/>
+    </net>
+    <net code="41" name="Net-(C42-Pad1)">
+      <node ref="C42" pin="1"/>
+      <node ref="C50" pin="1"/>
+      <node ref="C52" pin="1" pinfunction="1"/>
+      <node ref="U8" pin="4" pinfunction="Vout"/>
+    </net>
+    <net code="42" name="Net-(C45-Pad3)">
+      <node ref="C45" pin="3" pinfunction="3"/>
+      <node ref="C48" pin="1"/>
+      <node ref="R25" pin="2"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="43" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2"/>
+      <node ref="U6" pin="1" pinfunction="SW"/>
+    </net>
+    <net code="44" name="Net-(L3-Pad2)">
+      <node ref="L3" pin="2"/>
+      <node ref="U8" pin="1" pinfunction="SW"/>
+    </net>
+    <net code="45" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="6" pinfunction="-"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U4" pin="4" pinfunction="-"/>
+    </net>
+    <net code="46" name="Net-(R12-Pad2)">
+      <node ref="R12" pin="2"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="47" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2"/>
+      <node ref="U5" pin="2" pinfunction="NO"/>
+    </net>
+    <net code="48" name="Net-(U10-Pad11)">
+      <node ref="U10" pin="11" pinfunction="(PCINT26/RXD1/INT0)PD2"/>
+    </net>
+    <net code="49" name="Net-(U10-Pad12)">
+      <node ref="U10" pin="12" pinfunction="(PCINT27/TXD1/INT1)PD3"/>
+    </net>
+    <net code="50" name="Net-(U10-Pad13)">
+      <node ref="U10" pin="13" pinfunction="(PCINT28/XCK1/OC1B)PD4"/>
+    </net>
+    <net code="51" name="Net-(U10-Pad14)">
+      <node ref="U10" pin="14" pinfunction="(PCINT294/OC1A)PD5"/>
+    </net>
+    <net code="52" name="Net-(U10-Pad15)">
+      <node ref="U10" pin="15" pinfunction="(PCINT30/OC2B/ICP)PD6"/>
+    </net>
+    <net code="53" name="Net-(U10-Pad16)">
+      <node ref="U10" pin="16" pinfunction="(PCINT31/OC2A)PD7"/>
+    </net>
+    <net code="54" name="Net-(U10-Pad21)">
+      <node ref="U10" pin="21" pinfunction="(PCINT18/TCK)PC2"/>
+    </net>
+    <net code="55" name="Net-(U10-Pad23)">
+      <node ref="U10" pin="23" pinfunction="(PCINT20/TDO)PC4"/>
+    </net>
+    <net code="56" name="Net-(U10-Pad24)">
+      <node ref="U10" pin="24" pinfunction="(PCINT21/TDI)PC5"/>
+    </net>
+    <net code="57" name="Net-(U10-Pad25)">
+      <node ref="U10" pin="25" pinfunction="(PCINT22/TOSC1)PC6"/>
+    </net>
+    <net code="58" name="Net-(U10-Pad30)">
+      <node ref="U10" pin="30" pinfunction="(PCINT7/ADC7)PA7"/>
+    </net>
+    <net code="59" name="Net-(U10-Pad31)">
+      <node ref="U10" pin="31" pinfunction="(PCINT6/ADC6)PA6"/>
+    </net>
+    <net code="60" name="Net-(U10-Pad32)">
+      <node ref="U10" pin="32" pinfunction="(PCINT5/ADC5)PA5"/>
+    </net>
+    <net code="61" name="Net-(U10-Pad33)">
+      <node ref="U10" pin="33" pinfunction="(PCINT4/ADC4)PA4"/>
+    </net>
+    <net code="62" name="Net-(U10-Pad34)">
+      <node ref="U10" pin="34" pinfunction="(PCINT3/ADC3)PA3"/>
+    </net>
+    <net code="63" name="Net-(U10-Pad35)">
+      <node ref="U10" pin="35" pinfunction="(PCINT2/ADC2)PA2"/>
+    </net>
+    <net code="64" name="Net-(U10-Pad41)">
+      <node ref="U10" pin="41" pinfunction="(PCINT9/CLKO/T1)PB1"/>
+    </net>
+    <net code="65" name="Net-(U10-Pad42)">
+      <node ref="U10" pin="42" pinfunction="(PCINT10/AIN0/INT2)PB2"/>
+    </net>
+    <net code="66" name="Net-(U10-Pad43)">
+      <node ref="U10" pin="43" pinfunction="(PCINT11/AIN1/OC0)PB3"/>
+    </net>
+    <net code="67" name="Net-(U10-Pad44)">
+      <node ref="U10" pin="44" pinfunction="(PCINT12/OC0B/~SS~)PB4"/>
+    </net>
+    <net code="68" name="Net-(U11-Pad1)">
+      <node ref="U11" pin="1" pinfunction="OSCI"/>
+      <node ref="Y2" pin="2" pinfunction="2"/>
+    </net>
+    <net code="69" name="Net-(U11-Pad2)">
+      <node ref="U11" pin="2" pinfunction="OSCO"/>
+      <node ref="Y2" pin="1" pinfunction="1"/>
+    </net>
+    <net code="70" name="Net-(U11-Pad4)">
+      <node ref="U11" pin="4" pinfunction="TS"/>
+    </net>
+    <net code="71" name="Net-(U11-Pad8)">
+      <node ref="U11" pin="8" pinfunction="CLK"/>
+    </net>
+    <net code="72" name="Net-(U11-Pad9)">
+      <node ref="U11" pin="9" pinfunction="INTA"/>
+    </net>
+    <net code="73" name="PA0">
+      <node ref="R1" pin="1"/>
+      <node ref="U10" pin="37" pinfunction="(PCINT0/ADC0)PA0"/>
+    </net>
+    <net code="74" name="PA1">
+      <node ref="C17" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="3" pinfunction="+"/>
+      <node ref="U10" pin="36" pinfunction="(PCINT1/ADC1)PA1"/>
+      <node ref="U2" pin="3" pinfunction="+"/>
+      <node ref="U3" pin="2" pinfunction="Vout"/>
+    </net>
+    <net code="75" name="PB0">
+      <node ref="R12" pin="1"/>
+      <node ref="U10" pin="40" pinfunction="(PCINT8/T0/XCK)PB0"/>
+      <node ref="U5" pin="4" pinfunction="IN"/>
+    </net>
+    <net code="76" name="VDD">
+      <node ref="C25" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="L2" pin="1"/>
+      <node ref="L3" pin="1"/>
+      <node ref="R28" pin="1"/>
+    </net>
+  </nets>
+</export>
