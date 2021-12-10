@@ -1,4 +1,4 @@
-(kicad_sch (version 20210621) (generator eeschema)
+(kicad_sch (version 20211123) (generator eeschema)
 
   (uuid fd557e3a-d641-4aa8-b542-4ce7d8c8f248)
 
@@ -74,7 +74,8 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type background))
         )
-        (circle (center -1.27 0) (radius 0.381)           (stroke (width 0) (type default) (color 0 0 0 0))
+        (circle (center -1.27 0) (radius 0.381)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
         (polyline
@@ -93,7 +94,8 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (circle (center 1.27 0) (radius 0.381)           (stroke (width 0) (type default) (color 0 0 0 0))
+        (circle (center 1.27 0) (radius 0.381)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
@@ -132,7 +134,8 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type background))
         )
-        (circle (center -1.27 0) (radius 0.381)           (stroke (width 0) (type default) (color 0 0 0 0))
+        (circle (center -1.27 0) (radius 0.381)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
         (polyline
@@ -151,7 +154,8 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (circle (center 1.27 0) (radius 0.381)           (stroke (width 0) (type default) (color 0 0 0 0))
+        (circle (center 1.27 0) (radius 0.381)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
@@ -553,7 +557,8 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (circle (center 0 1.905) (radius 0.635)           (stroke (width 0) (type default) (color 0 0 0 0))
+        (circle (center 0 1.905) (radius 0.635)
+          (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
       )
@@ -566,13 +571,27 @@
     )
   )
 
-  (junction (at 237.49 83.82) (diameter 0) (color 0 0 0 0))
-  (junction (at 78.74 85.09) (diameter 0) (color 0 0 0 0))
-  (junction (at 157.48 83.82) (diameter 0) (color 0 0 0 0))
-  (junction (at 213.36 83.82) (diameter 0) (color 0 0 0 0))
-  (junction (at 97.79 85.09) (diameter 0) (color 0 0 0 0))
-  (junction (at 201.93 83.82) (diameter 0) (color 0 0 0 0))
-  (junction (at 71.12 85.09) (diameter 0) (color 0 0 0 0))
+  (junction (at 157.48 83.82) (diameter 0) (color 0 0 0 0)
+    (uuid 39549a53-fe72-4509-a12d-de170bbf0433)
+  )
+  (junction (at 237.49 83.82) (diameter 0) (color 0 0 0 0)
+    (uuid 4035093c-8c14-4085-bfea-fcb41c163f69)
+  )
+  (junction (at 213.36 83.82) (diameter 0) (color 0 0 0 0)
+    (uuid 5841a60a-7434-4694-9b2f-60c2321b8bd0)
+  )
+  (junction (at 78.74 85.09) (diameter 0) (color 0 0 0 0)
+    (uuid 71c1b4b1-fe29-4ef4-89f5-de4386e105a9)
+  )
+  (junction (at 201.93 83.82) (diameter 0) (color 0 0 0 0)
+    (uuid 8fecaef3-3ec3-48db-b92b-42aba82b3c34)
+  )
+  (junction (at 97.79 85.09) (diameter 0) (color 0 0 0 0)
+    (uuid 94f92a53-a887-4e67-921d-9685969e3c14)
+  )
+  (junction (at 71.12 85.09) (diameter 0) (color 0 0 0 0)
+    (uuid a07f1e79-1d7d-4a07-b840-3da61e06e5e0)
+  )
 
   (no_connect (at 50.8 58.42) (uuid 144254a6-ecc7-40f2-b1c3-233eb9ec52db))
   (no_connect (at 38.1 58.42) (uuid 743780be-d8f9-481f-a5d9-8b07a25a1c2b))
@@ -723,7 +742,7 @@
     (uuid cefce6cc-aae9-4766-84f5-d7230dc62260)
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 71.12 90.17 270)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:D-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 71.12 90.17 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589333)
     (property "Reference" "D3" (id 0) (at 73.1266 89.0016 90)
@@ -742,7 +761,7 @@
     (pin "2" (uuid 637618ef-4cd8-431d-b85c-ea0b483f2d2d))
   )
 
-  (symbol (lib_id "power:GND") (at 71.12 95.25 0)
+  (symbol (lib_id "power:GND") (at 71.12 95.25 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589349)
     (property "Reference" "#PWR0113" (id 0) (at 71.12 101.6 0)
@@ -758,7 +777,7 @@
     (pin "1" (uuid 9cad2a8a-0d43-42d8-a7c0-18e72f0a3e3c))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 87.63 87.63 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 87.63 87.63 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589354)
     (property "Reference" "C29" (id 0) (at 87.63 79.883 0))
@@ -774,7 +793,7 @@
     (pin "3" (uuid 8c475bb4-4278-438a-92f1-0610baa907da))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 97.79 90.17 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 97.79 90.17 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589368)
     (property "Reference" "C55" (id 0) (at 100.711 89.0016 0)
@@ -793,7 +812,7 @@
     (pin "2" (uuid 4efc97dd-8e7a-4092-9c77-d66271e28e11))
   )
 
-  (symbol (lib_id "power:GND") (at 78.74 95.25 0)
+  (symbol (lib_id "power:GND") (at 78.74 95.25 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589376)
     (property "Reference" "#PWR0114" (id 0) (at 78.74 101.6 0)
@@ -809,7 +828,7 @@
     (pin "1" (uuid e9b9da74-b7ee-498e-aa0c-0e95438dc5b1))
   )
 
-  (symbol (lib_id "power:GND") (at 97.79 95.25 0)
+  (symbol (lib_id "power:GND") (at 97.79 95.25 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c589381)
     (property "Reference" "#PWR0137" (id 0) (at 97.79 101.6 0)
@@ -825,7 +844,7 @@
     (pin "1" (uuid 71fbe15e-d8ea-4269-893a-b9cbe85f46db))
   )
 
-  (symbol (lib_id "power:GND") (at 87.63 95.25 0)
+  (symbol (lib_id "power:GND") (at 87.63 95.25 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c58938f)
     (property "Reference" "#PWR0139" (id 0) (at 87.63 101.6 0)
@@ -841,7 +860,7 @@
     (pin "1" (uuid e15e2a2f-9af9-4599-b075-f96608cf84a1))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue-SPACEDOS01B_PCB01A-rescue") (at 62.23 85.09 270)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:Polyfuse-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue-SPACEDOS01B_PCB01A-rescue") (at 62.23 85.09 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c58939a)
     (property "Reference" "F2" (id 0) (at 62.23 79.375 90))
@@ -894,7 +913,7 @@
     (pin "2" (uuid 4bb362ee-9eb4-43dd-81b6-797dd609a90a))
   )
 
-  (symbol (lib_id "power:GND") (at 50.8 73.66 0)
+  (symbol (lib_id "power:GND") (at 50.8 73.66 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c5954e0)
     (property "Reference" "#PWR0141" (id 0) (at 50.8 80.01 0)
@@ -926,7 +945,7 @@
     (pin "1" (uuid 3197fff0-62a2-44f2-9cc5-fe1abc13b73d))
   )
 
-  (symbol (lib_id "power:VDD") (at 109.22 72.39 0)
+  (symbol (lib_id "power:VDD") (at 109.22 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c5d8d8d)
     (property "Reference" "#PWR0174" (id 0) (at 109.22 76.2 0)
@@ -942,7 +961,7 @@
     (pin "1" (uuid 61c42683-d902-4928-a120-bf373653f892))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 78.74 90.17 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 78.74 90.17 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c5fb0d4)
     (property "Reference" "C36" (id 0) (at 81.661 89.0016 0)
@@ -1012,7 +1031,7 @@
     (pin "4" (uuid a7ca887e-ef17-40d0-be5b-61c086386e31))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 201.93 90.17 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 201.93 90.17 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0eb3)
     (property "Reference" "C42" (id 0) (at 204.851 89.0016 0)
@@ -1031,7 +1050,7 @@
     (pin "2" (uuid 7766edf9-0d31-453f-afca-26e5dd8e5607))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 213.36 90.17 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 213.36 90.17 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0eb9)
     (property "Reference" "C50" (id 0) (at 216.281 89.0016 0)
@@ -1050,7 +1069,7 @@
     (pin "2" (uuid 26274f55-c161-4159-960c-4c71ff4a5c6b))
   )
 
-  (symbol (lib_id "power:VDD") (at 153.67 80.01 0)
+  (symbol (lib_id "power:VDD") (at 153.67 80.01 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ec0)
     (property "Reference" "#PWR0161" (id 0) (at 153.67 83.82 0)
@@ -1066,7 +1085,7 @@
     (pin "1" (uuid 458ca655-d864-4cef-84ca-e6f731601aa0))
   )
 
-  (symbol (lib_id "power:GND") (at 185.42 96.52 0)
+  (symbol (lib_id "power:GND") (at 185.42 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ec8)
     (property "Reference" "#PWR0163" (id 0) (at 185.42 102.87 0)
@@ -1082,7 +1101,7 @@
     (pin "1" (uuid 38fdd070-0ca8-4c94-88e7-2b046e1a7e2f))
   )
 
-  (symbol (lib_id "power:GND") (at 201.93 96.52 0)
+  (symbol (lib_id "power:GND") (at 201.93 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ecf)
     (property "Reference" "#PWR0164" (id 0) (at 201.93 102.87 0)
@@ -1098,7 +1117,7 @@
     (pin "1" (uuid c98305a9-7c52-4a2e-b150-372e89f14c2d))
   )
 
-  (symbol (lib_id "power:GND") (at 213.36 96.52 0)
+  (symbol (lib_id "power:GND") (at 213.36 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ed5)
     (property "Reference" "#PWR0166" (id 0) (at 213.36 102.87 0)
@@ -1114,7 +1133,7 @@
     (pin "1" (uuid 82960a6d-35dc-4107-bd1f-26b6383eb9b0))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 157.48 90.17 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 157.48 90.17 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ee7)
     (property "Reference" "C32" (id 0) (at 160.401 89.0016 0)
@@ -1133,7 +1152,7 @@
     (pin "2" (uuid 633ef43b-e60e-4f7f-82fc-a3e0cf9fab35))
   )
 
-  (symbol (lib_id "power:GND") (at 157.48 96.52 0)
+  (symbol (lib_id "power:GND") (at 157.48 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0eed)
     (property "Reference" "#PWR0168" (id 0) (at 157.48 102.87 0)
@@ -1149,7 +1168,7 @@
     (pin "1" (uuid 94cc8296-8638-4326-9226-f52ad894f724))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 227.33 86.36 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:EMI_Filter_C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 227.33 86.36 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0ef9)
     (property "Reference" "C52" (id 0) (at 227.33 78.613 0))
@@ -1165,7 +1184,7 @@
     (pin "3" (uuid 2023b059-6ba6-44c4-9cca-80a5aaf3abe5))
   )
 
-  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 237.49 88.9 0)
+  (symbol (lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue") (at 237.49 88.9 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0eff)
     (property "Reference" "C54" (id 0) (at 240.411 87.7316 0)
@@ -1184,7 +1203,7 @@
     (pin "2" (uuid 221a981b-44fa-4712-8800-4ea1441a5725))
   )
 
-  (symbol (lib_id "power:GND") (at 237.49 96.52 0)
+  (symbol (lib_id "power:GND") (at 237.49 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0f09)
     (property "Reference" "#PWR0170" (id 0) (at 237.49 102.87 0)
@@ -1200,7 +1219,7 @@
     (pin "1" (uuid b77fb619-805c-4d86-ba6c-107ff82b8ed3))
   )
 
-  (symbol (lib_id "power:GND") (at 227.33 96.52 0)
+  (symbol (lib_id "power:GND") (at 227.33 96.52 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6d0f0f)
     (property "Reference" "#PWR0171" (id 0) (at 227.33 102.87 0)
