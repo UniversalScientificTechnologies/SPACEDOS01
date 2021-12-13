@@ -1,14 +1,33 @@
 ---
 layout: default
-title: SPACEDOS
+title: SPACEDOS01
 nav_order: 0
 has_children: true
 --- 
 
 
-# SPACEDOS01 - Opensource space dosimeter
+## Welcome to [SPACEDOS01](https://universalscientifictechnologies.github.io/SPACEDOS01/) documentation
 
-![Spacedos](img/SPACEDOS01B_top.jpg)
+SPACEDOS01B is semiconductor based dosimeter launched at Sokrat-R (NORAD ID 44404) satellite, curently orbiting the Earth about 500km above surface.
+The device is intended for measurement of cosmic radiation in mixed ionization fields on board satellites. 
 
- * [SPACEDOS01A - Engineering Model](SPACEDOS01A.md)
- * [SPACEDOS01B - Flight Model](SPACEDOS01B.md)
+![SPACEDOS01B device from bottom side](img/SPACEDOS01B_bottom.jpg "PCB")
+![SPACEDOS01B device from top side](img/SPACEDOS01B_top.jpg "PCB")
+
+**Technical parameters are following:**
+* Silicon PIN diode detector with 12.5 mm³ detection volume
+* Measurement environment - vacuum < 3.2×10−2 Pa
+* Number of energy channels 250
+* Deposited energy range from 200 keV to 12 MeV
+* Energy measurement resolution < 50 keV/channel
+* Power supply 3.3 V / 3 mA 
+* Integration time 15 s
+* Interface - RS232 TTL
+* H x W  x  L - 15mm x 41mm x 94 mm
+
+
+The device can be purchased from [Universal Scientific Technologies s.r.o](http://www.ust.cz). Contact us by email sale@ust.cz for a commercial quotation.
+
+## References
+
+  * [SPACEDOS dosimeter from the NPI became a part of the Cosmos Discovery exhibition](http://www.ujf.cas.cz/en/news/SPACEDOS-dosimeter-from-the-NPI-became-a-part-of-the-Cosmos-Discovery-exhibition/)
