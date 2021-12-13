@@ -8,9 +8,7 @@ permalink: SPACEDOS01B
 
 # SPACEDOS
 ## Physical dimensions
-![Physical dimensions]../doc/src/img/SPACEDOS01B_PCB01A.png)
-
-[Large view](../doc/src/img/SPACEDOS01B_PCB01A.png)
+![Physical dimensions](../doc/src/img/SPACEDOS01B_PCB01A.png)
 
 ## Energetic range and Climatic endurance
  
