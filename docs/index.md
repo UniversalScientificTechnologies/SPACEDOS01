@@ -10,6 +10,5 @@ has_children: true
 
 ![Spacedos](img/SPACEDOS01B_top.jpg)
 
-[SPACEDOS01A - Engineering Model](SPACEDOS01A.md)
-
-[SPACEDOS01B - Flight Model](SPACEDOS01B.md)
+ * [SPACEDOS01A - Engineering Model](SPACEDOS01A.md)
+ * [SPACEDOS01B - Flight Model](SPACEDOS01B.md)
