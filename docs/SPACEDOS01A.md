@@ -8,9 +8,9 @@ permalink: SPACEDOS01A
 
 # SPACEDOS
 ## Physical dimensions
-![Physical dimensions](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01A/doc/src/SPACEDOS01A_PCB01A.png)
+![Physical dimensions](../doc/src/img/SPACEDOS01A_PCB01A.png)
 
-[Large view](https://raw.githubusercontent.com/ODZ-UJF-AV-CR/SPACEDOS01/SPACEDOS01A/doc/src/SPACEDOS01A_PCB01A.png)
+[Large view](../doc/src/img/SPACEDOS01A_PCB01A.png)
 
 ## Energetic range and Climatic endurance
 
@@ -20,7 +20,7 @@ permalink: SPACEDOS01A
  * Used Sensor: HAMAMATSU S11773-02 (PIN diode 5 x 5 x 0.5 mm<sup>3</sup>)
 
 ## Electrical interface
-<img src="https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01A/doc/src/header.png" width="300">
+<img src="../doc/src/img/header.png" width="300">
 
 Signal | Description
 --- | ---
