@@ -8,7 +8,7 @@ permalink: SPACEDOS01B
 
 # SPACEDOS
 ## Physical dimensions
-![Physical dimensions](../doc/src/img/SPACEDOS01B_PCB01A.png)
+![Physical dimensions](img/SPACEDOS01B_PCB01A.png)
 
 ## Energetic range and Climatic endurance
  
@@ -20,7 +20,7 @@ permalink: SPACEDOS01B
  * Weight: 33 g
 
 ## Electrical interface
-<img src="../doc/src/img/header_B.png" width="400">
+<img src="img/header_B.png" width="400">
 
 Conector is depicted from PIN's side.
 
