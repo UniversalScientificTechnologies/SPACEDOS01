@@ -2,7 +2,7 @@
 layout: default
 title: SPACEDOS01B
 nav_order: 0
-parent: SPACEDOS
+parent: SPACEDOS01
 permalink: SPACEDOS01B
 ---
 
