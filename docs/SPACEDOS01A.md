@@ -3,7 +3,7 @@ layout: default
 title: SPACEDOS01A
 nav_order: 0
 parent: SPACEDOS
-permalink: SPACEDOS01/SPACEDOS01A
+permalink: SPACEDOS01A
 ---
 
 # SPACEDOS
@@ -13,13 +13,11 @@ permalink: SPACEDOS01/SPACEDOS01A
 [Large view](https://raw.githubusercontent.com/ODZ-UJF-AV-CR/SPACEDOS01/SPACEDOS01A/doc/src/SPACEDOS01A_PCB01A.png)
 
 ## Energetic range and Climatic endurance
-Dissipated Energy range: from 200 keV to 9 MeV
 
-Energy Resolution: < 50 keV
- 
-Temperature Stability: from -50 ℃ to +50 ℃ within error +50 keV
-
-Used Sensor: HAMAMATSU S11773-02 (PIN diode 5 x 5 x 0.5 mm<sup>3</sup>)
+ * Dissipated Energy range: from 200 keV to 9 MeV
+ * Energy Resolution: < 50 keV
+ * Temperature Stability: from -50 ℃ to +50 ℃ within error +50 keV
+ * Used Sensor: HAMAMATSU S11773-02 (PIN diode 5 x 5 x 0.5 mm<sup>3</sup>)
 
 ## Electrical interface
 <img src="https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01A/doc/src/header.png" width="300">
