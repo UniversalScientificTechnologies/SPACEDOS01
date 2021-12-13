@@ -8,9 +8,9 @@ permalink: SPACEDOS01B
 
 # SPACEDOS
 ## Physical dimensions
-![Physical dimensions](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01B/doc/src/SPACEDOS01B_PCB01A.png)
+![Physical dimensions]../doc/src/img/SPACEDOS01B_PCB01A.png)
 
-[Large view](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01B/doc/src/SPACEDOS01B_PCB01A.png)
+[Large view](../doc/src/img/SPACEDOS01B_PCB01A.png)
 
 ## Energetic range and Climatic endurance
  
@@ -22,7 +22,7 @@ permalink: SPACEDOS01B
  * Weight: 33 g
 
 ## Electrical interface
-<img src="https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01B/doc/src/header_B.png" width="400">
+<img src="../doc/src/img/header_B.png" width="400">
 
 Conector is depicted from PIN's side.
 
