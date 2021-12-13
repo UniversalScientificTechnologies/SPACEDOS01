@@ -1,5 +1,10 @@
-# SPACEDOS
+---
+layout: default
+title: OpenIntranet
+nav_order: 0
+--- 
 
-[SPACEDOS01A - Engineering Model](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/SPACEDOS01A)
+# SPACEDOS01 - Opensource space dosimeter
 
-[SPACEDOS01B - Flight Model](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/SPACEDOS01B)
+[SPACEDOS01A - Engineering Model](SPACEDOS01A.md)
+[SPACEDOS01B - Flight Model](SPACEDOS01B.md)
