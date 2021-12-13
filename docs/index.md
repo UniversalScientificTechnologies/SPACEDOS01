@@ -1,6 +1,6 @@
 ---
 layout: default
-title: OpenIntranet
+title: SPACEDOS
 nav_order: 0
 --- 
 
