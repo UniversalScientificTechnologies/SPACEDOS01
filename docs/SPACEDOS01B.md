@@ -1,3 +1,11 @@
+---
+layout: default
+title: SPACEDOS01B
+nav_order: 0
+parent: SPACEDOS
+permalink: SPACEDOS01/SPACEDOS01B
+---
+
 # SPACEDOS
 ## Physical dimensions
 ![Physical dimensions](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/blob/SPACEDOS01B/doc/src/SPACEDOS01B_PCB01A.png)
