@@ -20,4 +20,5 @@ The device is intended for measurement of cosmic radiation in mixed ionization f
 ## References
 
   * [SPACEDOS dosimeter from the NPI became a part of the Cosmos Discovery exhibition](http://www.ujf.cas.cz/en/news/SPACEDOS-dosimeter-from-the-NPI-became-a-part-of-the-Cosmos-Discovery-exhibition/)
+  * [SPACEDOS an open-source PIN diode dosimeter for applications in Space](https://indico.ujf.cas.cz/event/2/contributions/27/attachments/25/46/Po-1315-Kakona-774711333.pdf)
  
