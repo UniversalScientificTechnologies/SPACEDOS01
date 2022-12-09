@@ -1,7 +1,7 @@
 # SPACEDOS01B - cubesat dosimeter
 
 SPACEDOS01B is a semiconductor-based dosimeter launched at Sokrat-R (NORAD ID 44404) satellite, curently orbiting the Earth about 500km above the surface.
-The device is intended for measurement of cosmic radiation in mixed ionization fields on board satellites. 
+The device is intended for measurement of cosmic radiation in mixed ionization fields on board satellites. In the case of manned missions look to [SPACEDOS02](https://github.com/UniversalScientificTechnologies/SPACEDOS02) or [SPACEDOS03](https://github.com/UniversalScientificTechnologies/SPACEDOS03).
 
 ![SPACEDOS01B device from bottom side](doc/src/img/SPACEDOS01B_bottom.jpg "PCB")
 ![SPACEDOS01B device from top side](doc/src/img/SPACEDOS01B_top.jpg "PCB")
