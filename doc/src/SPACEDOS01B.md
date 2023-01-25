@@ -1,12 +1,5 @@
----
-layout: default
-title: SPACEDOS01B
-nav_order: 0
-parent: SPACEDOS01
-permalink: SPACEDOS01B
----
+# SPACEDOS01B - Flight Model
 
-# SPACEDOS
 ## Physical dimensions
 ![Physical dimensions](img/SPACEDOS01B_PCB01A.png)
 
