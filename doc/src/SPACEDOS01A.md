@@ -1,12 +1,5 @@
----
-layout: default
-title: SPACEDOS01A
-nav_order: 0
-parent: SPACEDOS01
-permalink: SPACEDOS01A
----
+# SPACEDOS - Engineering Model
 
-# SPACEDOS
 ## Physical dimensions
 ![Physical dimensions](img/SPACEDOS01A_PCB01A.png)
 
