@@ -6,9 +6,10 @@ The device is intended for measurement of cosmic radiation in mixed ionization f
 ![SPACEDOS01B device from bottom side](doc/src/img/SPACEDOS01B_bottom.jpg "PCB")
 ![SPACEDOS01B device from top side](doc/src/img/SPACEDOS01B_top.jpg "PCB")
 
-**Technical parameters are following:**
+### The main technical parameters are following 
+
 * Silicon PIN diode detector with 12.5 mm³ detection volume
-* Measurement environment: vacuum < 3.2×10−2 Pa
+* Measurement environment: vacuum < 3.2×10e−2 Pa
 * Number of energy channels: 250
 * Deposited energy range: from 200 keV to 12 MeV
 * Energy measurement resolution: < 50 keV/channel
@@ -16,6 +17,9 @@ The device is intended for measurement of cosmic radiation in mixed ionization f
 * Integration time: 15 s
 * Interface: RS232 TTL
 * Dimensions(HxWxL): 15mm x 41mm x 94 mm
+* Weight 33 g
+
+[Detailed technical documentation](doc/src/SPACEDOS01B.md)
 
 ## References
 
