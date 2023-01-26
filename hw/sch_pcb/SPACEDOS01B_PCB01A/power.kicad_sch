@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "SPACEDOS01B")
+    (date "2023-01-26")
+    (company "www.ust.cz")
+    (comment 1 "Semiconductor \\nIonizing radiation \\nsatellite spectrometer  \\nand dosimeter ")
+    (comment 3 "Universal Scientific Technologies s.r.o. ")
+  )
+
   (lib_symbols
     (symbol "Device:L_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "L" (id 0) (at 0.762 1.016 0)
@@ -1023,7 +1031,7 @@
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 185.42 86.36 0)
       (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 185.42 86.36 0)
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61322.pdf" (id 3) (at 185.42 86.36 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (pin "1" (uuid fbf48ff5-469e-4639-9c90-84c72bc9df86))

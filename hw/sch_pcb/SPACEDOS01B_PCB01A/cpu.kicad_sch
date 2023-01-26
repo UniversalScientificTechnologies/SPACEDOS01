@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "SPACEDOS01B")
+    (date "2023-01-26")
+    (company "www.ust.cz")
+    (comment 1 "Semiconductor \\nIonizing radiation \\nsatellite spectrometer  \\nand dosimeter ")
+    (comment 3 "Universal Scientific Technologies s.r.o. ")
+  )
+
   (lib_symbols
     (symbol "MLAB_HEADER:HEADER_1x01" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 -2.54 0)
