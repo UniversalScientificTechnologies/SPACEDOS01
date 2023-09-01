@@ -1,14 +1,14 @@
-# SPACEDOS01B - cubesat dosimeter
+# SPACEDOS01B - Cosmic-ray spectrometer and dosimeter for unmanned spacecraft missions
 
-SPACEDOS01B is a semiconductor-based dosimeter launched at Sokrat-R (NORAD ID 44404) satellite, curently orbiting the Earth about 500km above the surface.
-The device is intended for measurement of cosmic radiation in mixed ionization fields on board satellites. In the case of manned missions look to [SPACEDOS02](https://github.com/UniversalScientificTechnologies/SPACEDOS02) or [SPACEDOS03](https://github.com/UniversalScientificTechnologies/SPACEDOS03).
+SPACEDOS01B is a semiconductor-based dosimeter launched at Sokrat-R (NORAD ID 44404) satellite, currently orbiting the Earth about 500km above the surface.
+The device is intended for the measurement of cosmic radiation in mixed ionization fields on board satellites. In the case of manned missions look to [SPACEDOS02](https://github.com/UniversalScientificTechnologies/SPACEDOS02) or [SPACEDOS03](https://github.com/UniversalScientificTechnologies/SPACEDOS03).
 
 ![SPACEDOS01B device from bottom side](doc/src/img/SPACEDOS01B_bottom.jpg "PCB")
 ![SPACEDOS01B device from top side](doc/src/img/SPACEDOS01B_top.jpg "PCB")
 
-### The main technical parameters are following 
+### The main technical parameters are the following 
 
-* Silicon PIN diode detector with 12.5 mm³ detection volume
+* Silicon PIN diode detector with 44 mm³ detection volume
 * Measurement environment: vacuum < 3.2×10e−2 Pa
 * Number of energy channels: 250
 * Deposited energy range: from 200 keV to 12 MeV
