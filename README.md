@@ -8,7 +8,7 @@ The device is intended for the measurement of cosmic radiation in mixed ionizati
 
 ### The main technical parameters are the following 
 
-* Silicon PIN diode detector with 44 mm³ detection volume
+* Silicon PIN diode detector with ~12.5 mm³ detection volume
 * Measurement environment: vacuum < 3.2×10e−2 Pa
 * Number of energy channels: 250
 * Deposited energy range: from 200 keV to 12 MeV
