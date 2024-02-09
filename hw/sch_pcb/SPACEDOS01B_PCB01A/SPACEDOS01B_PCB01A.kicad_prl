@@ -16,16 +16,16 @@
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": true,
-      "graphics": true,
+      "graphics": false,
       "keepouts": false,
       "lockedItems": true,
-      "otherItems": true,
+      "otherItems": false,
       "pads": false,
-      "text": true,
-      "tracks": true,
-      "vias": true,
+      "text": false,
+      "tracks": false,
+      "vias": false,
       "zones": false
     },
     "visible_items": [
