@@ -46,7 +46,7 @@ The `$ADSD` message is sent once per day.
 Communication speed is 2400 baud.
 
 ### Power On
-_It transmits just after power is on._
+_It transmits just after the power is on._
 
 ```
 #POSD, <git hash>
@@ -55,12 +55,12 @@ _It transmits just after power is on._
 Value | Length | Type |Note
 --- | --- | --- | ---
 `$POSD` | 5 B | [Char](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Char) | Header
-git hash | 20 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Git hash tag from source file
+git hash | 20 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Git commit hash of source code
 
 This information says hello after power on.
 
 ### Initiation complete
-_It transmits ones after initialization after power on._
+_Transmitted once after initialization after power on._
 
 ```
 #ICSD
@@ -80,7 +80,7 @@ Value | Length | Type |Note
 --- | --- | --- | ---
 $DPSD | 5 B | [Char](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Char) | Header
 uptime | 4 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Time from power on
-noise channel | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | this channel containing noise
+noise channel | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | this channel contains noise
 0.1 MeV | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | number of particles with absorbed energy above 0.1 MeV
 ... | ... | ... |
 '>=9' MeV | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Overrange particles
