@@ -6,6 +6,8 @@ The device is intended for the measurement of cosmic radiation in mixed ionizati
 ![SPACEDOS01B device from bottom side](doc/src/img/SPACEDOS01B_bottom.jpg "PCB")
 ![SPACEDOS01B device from top side](doc/src/img/SPACEDOS01B_top.jpg "PCB")
 
+The device can be purchased from Universal Scientific Technologies s.r.o. Contact us by email at sale@ust.cz for a commercial quotation.
+
 ### The main technical parameters are the following 
 
 * Silicon PIN diode detector with ~12.5 mm³ detection volume
