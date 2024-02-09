@@ -15,7 +15,7 @@
 ## Electrical interface
 <img src="img/header_B.png" width="400">
 
-Conector is depicted from PIN's side.
+The connector is depicted from the pins side.
 
 Signal | Description
 --- | ---
@@ -40,13 +40,13 @@ $BESD,4,e7,2,1,0,0,0,0,0
 $ADSD,d3,3,0,0,0,0
 ```
 
-SPACEDOS sends `$DPSD`, `$HKSD` and `$BESD` messages each cca 15 seconds.
-`$ADSD` message is sended ones per one day.
+SPACEDOS sends `$DPSD`, `$HKSD`, and `$BESD` messages each cca 15 seconds.
+The `$ADSD` message is sent once per day.
 
 Communication speed is 2400 baud.
 
 ### Power On
-_It transmits just after power on._
+_It transmits just after power is on._
 
 ```
 #POSD, <git hash>
@@ -57,17 +57,17 @@ Value | Length | Type |Note
 `$POSD` | 5 B | [Char](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Char) | Header
 git hash | 20 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Git hash tag from source file
 
-This information just says hello after power on.
+This information says hello after power on.
 
 ### Initiation complete
-_It transmits ones after initialisation after power on._
+_It transmits ones after initialization after power on._
 
 ```
 #ICSD
 ```
 
 Initiation of the SPACEDOS HW is done.
-Initiation is completed up to one second after power on.
+Initiation is completed up to one second after power is on.
 
 ### DPSD - SpaceDos Data Payload message
 _It transmits every 15 seconds._
@@ -86,9 +86,9 @@ noise channel | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex
 '>=9' MeV | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Overrange particles
 DC offset | 2 B | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Offset of ADC
 
-This messages should be stored for long period and transmited to the ground as a batch.
+These messages should be stored for a long time and transmitted to the ground as a batch.
 
-Minimal data payload (without timemark) is 18 B per 15 s => 103680 B per day
+Minimal data payload (without time mark) is 18 B per 15 s => 103680 B per day
 
 ### HKSD - SpaceDos HouseKeeping message
 _It transmits every 15 seconds._
@@ -97,14 +97,14 @@ _It transmits every 15 seconds._
 $HKSD, <measurement No.> , <uptime>, <filter suppressions>, <position of the 1-st channel>, <1-st ch.>, <2-nd ch.>, <3-rd ch.>,...
 ``` 
 
-There is a packet with housekeeping information. Transmission of this packet is done besides other experiments hosekeeping data. Total length of this packet should be shorten. 
+There is a packet with housekeeping information. Transmission of this packet is done besides other experiment's housekeeping data. The total length of this packet should be shortened. 
 
 Value | Range | type |Note
 --- | --- | --- | ---
 $HKSD | fix | [Char](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Char) | Header
 measurement No. | 0..65535 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) |
 uptime | 0..4294967295 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) |
-filter suppressions | 0..65535 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Number of ussage of digital filter for double peak suppression
+filter suppressions | 0..65535 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Number of usage of digital filter for double peak suppression
 position of the 1-st channel | 0..511 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) |
 1-st ch. | 0..65535 | [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) | Number of events in 1-st ch.
 2-nd ch. | 0..65535 |  [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) |Number of events in 2-nd ch.
@@ -112,7 +112,7 @@ position of the 1-st channel | 0..511 | [Hex](https://github.com/ODZ-UJF-AV-CR/S
 50-th ch. | 0..65535 |  [Hex](https://github.com/ODZ-UJF-AV-CR/SPACEDOS01/wiki/Hex) |Number of events in 50-th ch.
 
 ### BESD - SpaceDos BEacon message
-_It transmits every 15 seconds. Values are zeroed after sending ADSD message._
+_It transmits every 15 seconds. Values are zeroed after sending an ADSD message._
 
 ```
 $BESD,<counter>, <0.1 MeV>, <0.14 MeV>, <0.21 MeV>, <0.33 MeV>, <0.66 MeV>, <1.68 MeV>, <4.72 MeV>, <'>=9 MeV'>
@@ -136,7 +136,7 @@ _It transmits after 5760 beacon messages. (cca every one day)_
 $ADSD, <0.1 MeV 1 day old>, <0.14 MeV one day old>, <0.66 MeV one day old>, <0.1 MeV two days old>, <0.14 MeV two days old>, <0.66 MeV two days old>
 ```
 
-This message contains two days old data for the beacon transmission purposes.
+This message contains two days old data for beacon transmission purposes.
 
 Value | Length | Type |Note
 --- | --- | --- | ---
