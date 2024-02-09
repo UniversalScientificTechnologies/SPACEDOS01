@@ -409,7 +409,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SPACEDOS01B_PCB01A.kicad_pro",
+    "filename": "SPACEDOS01.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -482,7 +482,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "../../../doc/assets/templates/KiCAD/page_layout.kicad_wks"
+    "page_layout_descr_file": "../../doc/assets/templates/KiCAD/page_layout.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
