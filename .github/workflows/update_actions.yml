@@ -1,7 +1,7 @@
 name: Update actions and assets repository
 on:
   schedule:
-  - cron: "0 0 * * *"
+  - cron: "0 */24 * * *"
   
   push:
     paths:
@@ -14,7 +14,7 @@ jobs:
      name: Update repository actions and other tools
      runs-on: ubuntu-latest
      steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
