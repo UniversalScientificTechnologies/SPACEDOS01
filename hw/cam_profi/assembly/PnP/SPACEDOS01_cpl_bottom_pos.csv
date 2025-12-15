@@ -1,0 +1,11 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"J1","HEADER_2x01","Straight_1x02",160.0225,-118.2037,0.0000,bottom
+"J2","HEADER_2x01_PARALLEL","Straight_1x02",157.4825,-118.2037,180.0000,bottom
+"J3","HEADER_2x01_PARALLEL","Straight_1x02",162.5625,-118.2037,180.0000,bottom
+"J4","HEADER_1x01","Straight_1x01",149.8625,-116.9337,0.0000,bottom
+"J5","HEADER_1x01","Straight_1x01",149.8625,-119.4737,0.0000,bottom
+"J6","HEADER_1x01","Straight_1x01",152.4025,-116.9337,0.0000,bottom
+"J7","HEADER_1x01","Straight_1x01",152.4025,-119.4737,0.0000,bottom
+"J19","HEADER_2x01_PARALLEL","Straight_2x01",154.9425,-118.2037,90.0000,bottom
+"M8","BMI-S-204-F","Laird_Technologies_BMI-S-204-F_32.00x32.00mm",114.4676,-104.2464,0.0000,bottom
+"M10","BMI-S-204-F","Laird_Technologies_BMI-S-204-F_32.00x32.00mm",147.8305,-98.1377,90.0000,bottom
