@@ -2827,7 +2827,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 20.32) (xy 90.17 21.59)
+			(xy 30.48 49.53) (xy 30.48 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2837,7 +2837,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 20.32) (xy 102.87 21.59)
+			(xy 43.18 49.53) (xy 43.18 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3177,7 +3177,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 30.48) (xy 78.74 29.21)
+			(xy 19.05 59.69) (xy 19.05 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3317,7 +3317,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 20.32) (xy 78.74 21.59)
+			(xy 19.05 49.53) (xy 19.05 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3487,7 +3487,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 30.48) (xy 90.17 29.21)
+			(xy 30.48 59.69) (xy 30.48 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3507,7 +3507,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 30.48) (xy 102.87 29.21)
+			(xy 43.18 59.69) (xy 43.18 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4509,7 +4509,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b1e1a11")
 		(property "Reference" "R23"
-			(at 120.65 34.29 90)
+			(at 121.92 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5892,7 +5892,7 @@
 	)
 	(symbol
 		(lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue")
-		(at 78.74 25.4 0)
+		(at 19.05 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5900,7 +5900,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b36fe27")
 		(property "Reference" "C34"
-			(at 81.661 24.2316 0)
+			(at 21.971 53.4416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5909,7 +5909,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 81.661 26.543 0)
+			(at 21.971 55.753 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5918,7 +5918,7 @@
 			)
 		)
 		(property "Footprint" "Mlab_R:SMD-0805"
-			(at 79.7052 29.21 0)
+			(at 20.0152 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5927,7 +5927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 25.4 0)
+			(at 19.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5936,7 +5936,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 25.4 0)
+			(at 19.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5944,7 +5944,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984712875079b91f8b4c"
-			(at 78.74 25.4 0)
+			(at 19.05 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5969,7 +5969,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 78.74 30.48 0)
+		(at 19.05 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5977,7 +5977,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b36fe2e")
 		(property "Reference" "#PWR0154"
-			(at 78.74 36.83 0)
+			(at 19.05 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5986,7 +5986,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.867 34.8742 0)
+			(at 19.177 64.0842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5994,7 +5994,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 30.48 0)
+			(at 19.05 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6003,7 +6003,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 30.48 0)
+			(at 19.05 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6012,7 +6012,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 30.48 0)
+			(at 19.05 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6174,7 +6174,7 @@
 	)
 	(symbol
 		(lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue")
-		(at 90.17 25.4 0)
+		(at 30.48 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6182,7 +6182,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b38c9ac")
 		(property "Reference" "C35"
-			(at 93.091 24.2316 0)
+			(at 33.401 53.4416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +6191,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 93.091 26.543 0)
+			(at 33.401 55.753 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6200,7 +6200,7 @@
 			)
 		)
 		(property "Footprint" "Mlab_R:SMD-0805"
-			(at 91.1352 29.21 0)
+			(at 31.4452 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6209,7 +6209,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 25.4 0)
+			(at 30.48 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6218,7 +6218,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 25.4 0)
+			(at 30.48 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6226,7 +6226,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984712875079b91f8b4c"
-			(at 90.17 25.4 0)
+			(at 30.48 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6251,7 +6251,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 30.48 0)
+		(at 30.48 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6259,7 +6259,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b38c9b3")
 		(property "Reference" "#PWR0156"
-			(at 90.17 36.83 0)
+			(at 30.48 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6268,7 +6268,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.297 34.8742 0)
+			(at 30.607 64.0842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6276,7 +6276,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 30.48 0)
+			(at 30.48 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6285,7 +6285,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 30.48 0)
+			(at 30.48 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6294,7 +6294,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 30.48 0)
+			(at 30.48 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6315,7 +6315,7 @@
 	)
 	(symbol
 		(lib_id "SPACEDOS01B_PCB01A-rescue:C-device-DATALOGGER01A-rescue-CCP2019V01A-rescue-SPACEDOS01A_PCB01A-rescue")
-		(at 102.87 25.4 0)
+		(at 43.18 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6323,7 +6323,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b3a9d6d")
 		(property "Reference" "C39"
-			(at 105.791 24.2316 0)
+			(at 46.101 53.4416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6332,7 +6332,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 105.791 26.543 0)
+			(at 46.101 55.753 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6341,7 +6341,7 @@
 			)
 		)
 		(property "Footprint" "Mlab_R:SMD-0805"
-			(at 103.8352 29.21 0)
+			(at 44.1452 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6350,7 +6350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 25.4 0)
+			(at 43.18 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6359,7 +6359,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 25.4 0)
+			(at 43.18 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6367,7 +6367,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984712875079b91f8b4c"
-			(at 102.87 25.4 0)
+			(at 43.18 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6392,7 +6392,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 102.87 30.48 0)
+		(at 43.18 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6400,7 +6400,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b3a9d74")
 		(property "Reference" "#PWR0158"
-			(at 102.87 36.83 0)
+			(at 43.18 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6409,7 +6409,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.997 34.8742 0)
+			(at 43.307 64.0842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6417,7 +6417,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 30.48 0)
+			(at 43.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6426,7 +6426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 30.48 0)
+			(at 43.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6435,7 +6435,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 30.48 0)
+			(at 43.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6880,7 +6880,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 78.74 20.32 0)
+		(at 19.05 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6888,7 +6888,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c6d56de")
 		(property "Reference" "#PWR0120"
-			(at 78.74 24.13 0)
+			(at 19.05 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6897,7 +6897,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 79.121 15.9258 0)
+			(at 19.431 45.1358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6905,7 +6905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 20.32 0)
+			(at 19.05 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6914,7 +6914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 20.32 0)
+			(at 19.05 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6923,7 +6923,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 20.32 0)
+			(at 19.05 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6944,7 +6944,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 90.17 20.32 0)
+		(at 30.48 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6952,7 +6952,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c6d574e")
 		(property "Reference" "#PWR0130"
-			(at 90.17 24.13 0)
+			(at 30.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6961,7 +6961,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 90.551 15.9258 0)
+			(at 30.861 45.1358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6969,7 +6969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 20.32 0)
+			(at 30.48 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6978,7 +6978,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 20.32 0)
+			(at 30.48 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6987,7 +6987,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 20.32 0)
+			(at 30.48 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,7 +7008,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 102.87 20.32 0)
+		(at 43.18 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7016,7 +7016,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c6d57b7")
 		(property "Reference" "#PWR0131"
-			(at 102.87 24.13 0)
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7025,7 +7025,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 103.251 15.9258 0)
+			(at 43.561 45.1358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7033,7 +7033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 20.32 0)
+			(at 43.18 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7042,7 +7042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 20.32 0)
+			(at 43.18 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7051,7 +7051,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 20.32 0)
+			(at 43.18 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
