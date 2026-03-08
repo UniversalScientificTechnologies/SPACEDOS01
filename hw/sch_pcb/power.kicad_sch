@@ -1686,6 +1686,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Current limiting resistor.\nOptionally PTC fuse. "
+		(exclude_from_sim no)
+		(at 54.61 90.17 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "b4d95d16-401d-4d2b-b2ee-9bae583d0f95")
+	)
 	(junction
 		(at 157.48 83.82)
 		(diameter 0)
