@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/SPACEDOS01.kicad_sch</source>
-    <date>2026-03-08T01:25:44+0000</date>
+    <date>2026-03-12T10:38:33+0000</date>
     <tool>Eeschema 9.0.7+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -792,17 +792,17 @@
       <tstamps>00000000-0000-0000-0000-00005b3acfa9</tstamps>
     </comp>
     <comp ref="R10">
-      <value>1k</value>
+      <value>1k2</value>
       <footprint>Mlab_R:SMD-0805</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="UST_ID">5c70984512875079b91f898c</field>
+        <field name="UST_ID">5c70984512875079b91f898d</field>
         <field name="Footprint">Mlab_R:SMD-0805</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description=""/>
-      <property name="UST_ID" value="5c70984512875079b91f898c"/>
+      <property name="UST_ID" value="5c70984512875079b91f898d"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="SPACEDOS01.kicad_sch"/>
       <property name="ki_fp_filters" value="R_*"/>
