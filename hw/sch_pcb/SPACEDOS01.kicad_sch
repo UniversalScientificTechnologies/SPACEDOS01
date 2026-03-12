@@ -5578,7 +5578,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k2"
 			(at 137.16 125.73 90)
 			(effects
 				(font
@@ -5612,7 +5612,7 @@
 				)
 			)
 		)
-		(property "UST_ID" "5c70984512875079b91f898c"
+		(property "UST_ID" "5c70984512875079b91f898d"
 			(at 137.16 125.73 90)
 			(effects
 				(font
