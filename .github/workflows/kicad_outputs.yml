@@ -256,10 +256,55 @@ jobs:
           path: ${{ env.dir }}_img/img/**
 
 
+  cad_postprocess:
+    name: "CAD postprocess"
+    runs-on: ubuntu-latest
+    needs: [graphics]
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: doc_cad
+          path: doc_cad
+
+      - name: Install CAD postprocess tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y admesh
+
+      - name: Convert STL to binary STL and compress large STEP
+        run: |
+          threshold=$((50 * 1024 * 1024))
+
+          find doc_cad -type f -name '*.stl' | while read -r f; do
+            tmp="${f}.tmp"
+            admesh --write-binary-stl="$tmp" "$f"
+            mv "$tmp" "$f"
+          done
+
+          find doc_cad -type f -name '*.step' | while read -r f; do
+            size=$(stat -c%s "$f")
+            if [ "$size" -gt "$threshold" ]; then
+              gzip -9 "$f"
+            fi
+          done
+
+      - name: Diagnostic output sizes
+        run: |
+          echo "STL files:"
+          find doc_cad -type f -name '*.stl' -exec stat -c '%n %s bytes' {} \;
+          echo "STEP/STEP.GZ files:"
+          find doc_cad -type f \( -name '*.step' -o -name '*.step.gz' \) -exec stat -c '%n %s bytes' {} \;
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: doc_cad_processed
+          path: doc_cad/**
+
+
   UPDATE_REPO:
     runs-on: ubuntu-latest
     name: Update repository
-    needs: [graphics, gerbers, schematics, placement, report, ibom]
+    needs: [cad_postprocess, gerbers, schematics, placement, report, ibom]
     steps:
     - uses: actions/checkout@v4
       with:
@@ -294,7 +339,7 @@ jobs:
         mkdir hw/cam_profi/ibom || true
                 
         cp -r doc_img/* doc/gen/img || true
-        cp -r doc_cad/cad/* doc/gen || true
+        cp -r doc_cad_processed/cad/* doc/gen || true
         cp -r hw_cam_profi/* hw/cam_profi/gbr || true
         cp -r doc_sch/docs/* doc/gen || true
         cp -r doc_xml/* hw/cam_profi || true
@@ -308,6 +353,7 @@ jobs:
 
         rm -r doc_img || true
         rm -r doc_cad || true
+        rm -r doc_cad_processed || true
         rm -r hw_cam_profi || true
         rm -r doc_sch || true
         rm -r doc_placement || true
