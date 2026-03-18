@@ -2,7 +2,9 @@
 import sys
 import os
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.backend_tools import ToolBase
 
 def parse_log(filepath):
     """Parse SPACEDOS01 log file and sum energy spectrum channels."""
@@ -70,34 +72,76 @@ def find_peak_channel(spectrum):
     print(f"Kanál s nejvyšším počtem částic (prvních 10): {peak_channel} s {spectrum[peak_channel]} částicemi")
     return peak_channel
 
-def plot_spectrum(spectrum, output_file, peak_channel, duration=None, record_name=None):
-    """Plot energy spectrum."""
+def load_and_combine(log_files):
+    """Load and combine spectra from log files. Returns (spectrum, duration)."""
+    combined_spectrum = None
+    total_duration = 0
     
-    # Přečíslování kanálů - peak_channel se stane kanálem 0
-    channel_numbers = np.arange(len(spectrum)) - peak_channel
+    for log_file in log_files:
+        print(f"Zpracovávám: {log_file}")
+        spectrum, duration = parse_log(log_file)
+        
+        if spectrum is not None:
+            if combined_spectrum is None:
+                combined_spectrum = spectrum.copy()
+            else:
+                n = min(len(combined_spectrum), len(spectrum))
+                combined_spectrum[:n] += spectrum[:n]
+            
+            if duration is not None:
+                total_duration += duration
     
-    plt.figure(figsize=(12, 6))
+    return combined_spectrum, total_duration
+
+def plot_spectrum(spectrum, output_file, peak_channel, duration=None, record_name=None, log_files=None, csv_file=None):
+    """Plot energy spectrum with reload button."""
     
-    # Zvýraznit kanál 0 svislou čarou (za sloupečky, na začátku sloupečku 0)
-    plt.axvline(x=-0.5, color='red', linestyle='--', linewidth=2, zorder=1)
+    matplotlib.rcParams['toolbar'] = 'toolmanager'
+    fig, ax = plt.subplots(figsize=(12, 6))
     
-    plt.bar(channel_numbers, spectrum, width=1.0, edgecolor='black', linewidth=0.5, zorder=2)
+    def draw(spec, pc, dur):
+        ax.clear()
+        channel_numbers = np.arange(len(spec)) - pc
+        ax.axvline(x=-0.5, color='red', linestyle='--', linewidth=2, zorder=1)
+        ax.bar(channel_numbers, spec, width=1.0, edgecolor='black', linewidth=0.5, zorder=2)
+        ax.set_xlabel('Channel Number')
+        ax.set_ylabel('Particle Count')
+        ax.set_yscale('log')
+        
+        title = 'Energy Spectrum SPACEDOS01'
+        if record_name is not None:
+            title += f' - {record_name}'
+        if dur is not None:
+            title += f' - Expozice: {dur}s ({dur/60:.1f} min)'
+        ax.set_title(title)
+        ax.grid(True, alpha=0.3)
+        fig.canvas.draw_idle()
     
-    plt.xlabel('Channel Number')
-    plt.ylabel('Particle Count')
-    plt.yscale('log')
+    draw(spectrum, peak_channel, duration)
     
-    title = 'Energy Spectrum SPACEDOS01'
-    if record_name is not None:
-        title += f' - {record_name}'
-    if duration is not None:
-        title += f' - Expozice: {duration}s ({duration/60:.1f} min)'
-    plt.title(title)
+    class ReloadTool(ToolBase):
+        default_keymap = 'r'
+        description = 'Reload data from log files'
+        
+        def trigger(self, *args, **kwargs):
+            if log_files is None:
+                return
+            print("\nReload dat...")
+            new_spectrum, new_duration = load_and_combine(log_files)
+            if new_spectrum is not None:
+                new_peak = find_peak_channel(new_spectrum)
+                draw(new_spectrum, new_peak, new_duration if new_duration > 0 else None)
+                if csv_file is not None:
+                    save_csv(new_spectrum, csv_file, new_peak)
+                fig.savefig(output_file, dpi=300, bbox_inches='tight')
+                print(f"Graf uložen do: {output_file}")
+            else:
+                print("Chyba: Nepodařilo se načíst data")
     
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
+    fig.canvas.manager.toolmanager.add_tool('reload', ReloadTool)
+    fig.canvas.manager.toolbar.add_tool('reload', 'io')
     
-    plt.savefig(output_file, dpi=300, bbox_inches='tight')
+    fig.savefig(output_file, dpi=300, bbox_inches='tight')
     print(f"Graf uložen do: {output_file}")
     plt.show()
 
@@ -108,22 +152,7 @@ if __name__ == '__main__':
     
     log_files = sys.argv[1:]
     
-    combined_spectrum = None
-    total_duration = 0
-    
-    for log_file in log_files:
-        print(f"Zpracovávám: {log_file}")
-        spectrum, duration = parse_log(log_file)
-        
-        if spectrum is not None:
-            if combined_spectrum is None:
-                combined_spectrum = spectrum
-            else:
-                n = min(len(combined_spectrum), len(spectrum))
-                combined_spectrum[:n] += spectrum[:n]
-            
-            if duration is not None:
-                total_duration += duration
+    combined_spectrum, total_duration = load_and_combine(log_files)
     
     if combined_spectrum is not None:
         print(f"\nCelkem načteno {len(log_files)} souborů")
@@ -144,7 +173,7 @@ if __name__ == '__main__':
         
         peak_channel = find_peak_channel(combined_spectrum)
         save_csv(combined_spectrum, csv_file, peak_channel)
-        plot_spectrum(combined_spectrum, png_file, peak_channel, total_duration if total_duration > 0 else None, record_name)
+        plot_spectrum(combined_spectrum, png_file, peak_channel, total_duration if total_duration > 0 else None, record_name, log_files, csv_file)
     else:
         print("Chyba: Nepodařilo se načíst data z žádného logu")
         sys.exit(1)
