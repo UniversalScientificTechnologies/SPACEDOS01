@@ -11,19 +11,54 @@ on:
       - '**.kicad_sch'
       - '**.kicad_pro'
       - '**.yml'
+      - '**.yaml'
       - 'doc/assets'
   workflow_dispatch:
-  
+
 env:
-  schema: "hw/sch_pcb/${{ github.event.repository.name }}.kicad_sch"
-  board: "hw/sch_pcb/${{ github.event.repository.name }}.kicad_pcb"
-  project: ${{ github.event.repository.name }}
   branch: ${{ github.head_ref || github.ref_name }}
   dir: "hw/out"
   kibot: "doc/assets/kibot"
 
 jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.pat }}
+          ref: ${{ github.head_ref }}
+
+      - id: set-matrix
+        run: |
+          if [ -f hw/sch_pcb/PCB_matrix.yaml ]; then
+            MATRIX=$(python3 -c "
+          import yaml, json
+          with open('hw/sch_pcb/PCB_matrix.yaml') as f:
+              projects = yaml.safe_load(f)
+          matrix = {'include': [
+              {'name': p['name'], 'dir': p['dir'],
+               'schema': p['dir'] + '/' + p['name'] + '.kicad_sch',
+               'board':  p['dir'] + '/' + p['name'] + '.kicad_pcb'}
+              for p in projects
+          ]}
+          print(json.dumps(matrix))
+          ")
+          else
+            REPO="${{ github.event.repository.name }}"
+            MATRIX="{\"include\":[{\"name\":\"$REPO\",\"dir\":\"hw/sch_pcb\",\"schema\":\"hw/sch_pcb/$REPO.kicad_sch\",\"board\":\"hw/sch_pcb/$REPO.kicad_pcb\"}]}"
+          fi
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+
+
   ERC:
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -32,16 +67,20 @@ jobs:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/erc.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}
-          
-          
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}/${{ matrix.name }}
+
+
   DRC:
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -50,16 +89,20 @@ jobs:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/drc.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}
-          
-          
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}/${{ matrix.name }}
+
+
   schematics:
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -68,99 +111,104 @@ jobs:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/schematics.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_docs
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_docs/${{ matrix.name }}
 
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_sch
-          path: ${{ env.dir }}_docs/**
-          
+          name: doc_sch_${{ matrix.name }}
+          path: ${{ env.dir }}_docs/${{ matrix.name }}/**
+
+
   placement:
     name: "Placement and XML"
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
-    #continue-on-error: true
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/placement.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_docs
-        
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_docs/${{ matrix.name }}
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/xml.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_docs
-          
-#       - name: "Rename output"
-#         run: |
-#           for file in $(find ${{env.dir}} -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
-#           for file in $(find ${{env.dir}}_docs -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_docs/${{ matrix.name }}
 
       - name: "Collect files"
         run: |
           tree
-          mkdir doc_xml || true ;
-          mv hw/sch_pcb/*.xml doc_xml/ || true;
-          mv hw/out_docs/*.csv doc_xml/ || true;
-          
-      - uses: actions/upload-artifact@v4
-        if: ${{ success() }}
-        with:
-          name: doc_xml
-          path: |
-            doc_xml
+          mkdir doc_xml_${{ matrix.name }} || true
+          mv ${{ matrix.dir }}/*.xml doc_xml_${{ matrix.name }}/ || true
+          mv ${{ env.dir }}_docs/${{ matrix.name }}/*.csv doc_xml_${{ matrix.name }}/ || true
 
-      # Zde se zahazuji debugovaci videa
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_placement
+          name: doc_xml_${{ matrix.name }}
+          path: doc_xml_${{ matrix.name }}
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ success() }}
+        with:
+          name: doc_placement_${{ matrix.name }}
           path: |
-            ${{ env.dir }}_docs/**/*.pdf
-            ${{ env.dir }}_docs/**/*.svg
-            ${{ env.dir }}_docs/**/*.csv
+            ${{ env.dir }}_docs/${{ matrix.name }}/**/*.pdf
+            ${{ env.dir }}_docs/${{ matrix.name }}/**/*.svg
+            ${{ env.dir }}_docs/${{ matrix.name }}/**/*.csv
+
 
   report:
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
-    #continue-on-error: true
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/report.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_report
-        
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_report/${{ matrix.name }}
+
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_report
-          path: ${{ env.dir }}_report/
+          name: doc_report_${{ matrix.name }}
+          path: ${{ env.dir }}_report/${{ matrix.name }}/
 
 
   ibom:
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -169,27 +217,27 @@ jobs:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/ibom.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_ibom
-          
-      - name: "Rename output"
-        run: for file in $(find ${{env.dir}} -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" ; done
-        
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_ibom/${{ matrix.name }}
+
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_ibom
-          path: ${{ env.dir }}_ibom/
+          name: doc_ibom_${{ matrix.name }}
+          path: ${{ env.dir }}_ibom/${{ matrix.name }}/
 
 
-# fabrications
   gerbers:
-    name: "Fabrication: Gerebrs, Drill and PnP"
+    name: "Fabrication: Gerbers, Drill and PnP"
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -198,72 +246,78 @@ jobs:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
-      - uses: INTI-CMNB/KiBot@v2_dk9        
+
+      - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/gerbers.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_gerbers
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_gerbers/${{ matrix.name }}
           verbose: 3
 
       - name: "Rename output"
-        run: for file in $(find ${{env.dir}}_gerbers -type f); do sudo mv "${file}" "${file//${{env.project}}/${{env.branch}}}" || true ; done
-          
+        run: for file in $(find ${{ env.dir }}_gerbers/${{ matrix.name }} -type f); do sudo mv "${file}" "${file//${{ matrix.name }}/${{ env.branch }}}" || true ; done
+
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: hw_cam_profi
-          path: ${{ env.dir }}_gerbers/gerbers/**
+          name: hw_cam_profi_${{ matrix.name }}
+          path: ${{ env.dir }}_gerbers/${{ matrix.name }}/gerbers/**
 
 
   graphics:
     name: "CAD and render"
+    needs: [discover]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
-    #continue-on-error: true
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
           token: ${{ secrets.pat }}
           ref: ${{ github.head_ref }}
-          
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/cad.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_cad
-          
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_cad/${{ matrix.name }}
+
       - uses: INTI-CMNB/KiBot@v2_dk9
         with:
           config: ${{ env.kibot }}/render.kibot.yaml
-          schema: ${{ env.schema }}
-          board: ${{ env.board }}
-          dir: ${{ env.dir }}_img
+          schema: ${{ matrix.schema }}
+          board: ${{ matrix.board }}
+          dir: ${{ env.dir }}_img/${{ matrix.name }}
           verbose: 3
 
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_cad
-          path: ${{ env.dir }}_cad/**
-          
+          name: doc_cad_${{ matrix.name }}
+          path: ${{ env.dir }}_cad/${{ matrix.name }}/**
+
       - uses: actions/upload-artifact@v4
         if: ${{ success() }}
         with:
-          name: doc_img
-          path: ${{ env.dir }}_img/img/**
+          name: doc_img_${{ matrix.name }}
+          path: ${{ env.dir }}_img/${{ matrix.name }}/img/**
 
 
   cad_postprocess:
     name: "CAD postprocess"
+    needs: [discover, graphics]
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+      fail-fast: false
     runs-on: ubuntu-latest
-    needs: [graphics]
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: doc_cad
+          name: doc_cad_${{ matrix.name }}
           path: doc_cad
 
       - name: Install CAD postprocess tools
@@ -297,7 +351,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: doc_cad_processed
+          name: doc_cad_processed_${{ matrix.name }}
           path: doc_cad/**
 
 
@@ -306,64 +360,56 @@ jobs:
     name: Update repository
     needs: [cad_postprocess, gerbers, schematics, placement, report, ibom]
     steps:
-    - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
-        token: ${{ secrets.pat }}
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.pat }}
 
-    - run: |
-        git pull --force --rebase || true
-        git submodule update --remote || true
+      - run: |
+          git pull --force --rebase || true
+          git submodule update --remote || true
 
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v4
-    
-    - name: Remove old manufarturing data
-      run: | 
-        rm -r hw/cam_profi || true
-        rm -r doc/gen || true
-    
-    - name: Extract to right position
-      run: |
-    
-        mkdir doc || true
-        mkdir doc/gen || true
-        mkdir doc/gen/img || true
-        mkdir doc/gen/mesh || true
-        mkdir doc/img || true
-        mkdir doc/img/render || true
-        mkdir hw || true
-        mkdir hw/cam_profi || true
-        mkdir hw/cam_profi/gbr || true
-        mkdir hw/cam_profi/assembly || true
-        mkdir hw/cam_profi/ibom || true
-                
-        cp -r doc_img/* doc/gen/img || true
-        cp -r doc_cad_processed/cad/* doc/gen || true
-        cp -r hw_cam_profi/* hw/cam_profi/gbr || true
-        cp -r doc_sch/docs/* doc/gen || true
-        cp -r doc_xml/* hw/cam_profi || true
-        cp -r doc_sch/img/pcb/* doc/gen/img || true
-        mv -r doc_placement/PnP/* hw/cam_profi/assembly || true
-        cp -r doc_placement/* hw/cam_profi/assembly || true
-        cp -r doc_report/* doc/gen || true
-        cp -r doc_ibom/docs/* hw/cam_profi || true
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
 
-        mv hw/cam_profi/gbr/PnP/ hw/cam_profi/assembly || true
+      - name: Remove old manufacturing data
+        run: |
+          rm -rf hw/cam_profi || true
+          rm -rf doc/gen || true
 
-        rm -r doc_img || true
-        rm -r doc_cad || true
-        rm -r doc_cad_processed || true
-        rm -r hw_cam_profi || true
-        rm -r doc_sch || true
-        rm -r doc_placement || true
-        rm -r doc_xml || true
-        rm -r doc_report || true
-        rm -r doc_ibom || true
-        
-        git add . -f
-        
-    - uses: stefanzweifel/git-auto-commit-action@v4.16.0
-      with:
-        commit_message: Update actions products
-        add_options: '-A -f'
+      - name: Extract to right position
+        run: |
+          mkdir -p doc/gen doc/img/render hw/cam_profi
+
+          if [ -f hw/sch_pcb/PCB_matrix.yaml ]; then
+            NAMES=$(python3 -c "import yaml; [print(p['name']) for p in yaml.safe_load(open('hw/sch_pcb/PCB_matrix.yaml'))]")
+          else
+            NAMES="${{ github.event.repository.name }}"
+          fi
+
+          for name in $NAMES; do
+            mkdir -p doc/gen/$name/img doc/gen/$name/mesh
+            mkdir -p hw/cam_profi/$name/gbr hw/cam_profi/$name/assembly hw/cam_profi/$name/ibom
+
+            cp -r doc_img_$name/* doc/gen/$name/img/ || true
+            cp -r doc_cad_processed_$name/cad/* doc/gen/$name/ || true
+            cp -r hw_cam_profi_$name/* hw/cam_profi/$name/gbr/ || true
+            cp -r doc_sch_$name/docs/* doc/gen/$name/ || true
+            cp -r doc_xml_$name/* hw/cam_profi/$name/ || true
+            cp -r doc_sch_$name/img/pcb/* doc/gen/$name/img/ || true
+            cp -r doc_placement_$name/* hw/cam_profi/$name/assembly/ || true
+            cp -r doc_report_$name/* doc/gen/$name/ || true
+            cp -r doc_ibom_$name/docs/* hw/cam_profi/$name/ibom/ || true
+
+            mv hw/cam_profi/$name/gbr/PnP/ hw/cam_profi/$name/assembly/ || true
+          done
+
+          rm -rf doc_img_* doc_cad_* doc_cad_processed_* hw_cam_profi_* doc_sch_* \
+                 doc_placement_* doc_xml_* doc_report_* doc_ibom_* || true
+
+          git add . -f
+
+      - uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        with:
+          commit_message: Update actions products
+          add_options: '-A -f'
