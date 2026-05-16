@@ -383,26 +383,40 @@ jobs:
 
           if [ -f hw/sch_pcb/PCB_matrix.yaml ]; then
             NAMES=$(python3 -c "import yaml; [print(p['name']) for p in yaml.safe_load(open('hw/sch_pcb/PCB_matrix.yaml'))]")
+
+            for name in $NAMES; do
+              mkdir -p doc/gen/$name/img doc/gen/$name/mesh
+              mkdir -p hw/cam_profi/$name/gbr hw/cam_profi/$name/assembly hw/cam_profi/$name/ibom
+
+              cp -r doc_img_$name/* doc/gen/$name/img/ || true
+              cp -r doc_cad_processed_$name/cad/* doc/gen/$name/ || true
+              cp -r hw_cam_profi_$name/* hw/cam_profi/$name/gbr/ || true
+              cp -r doc_sch_$name/docs/* doc/gen/$name/ || true
+              cp -r doc_xml_$name/* hw/cam_profi/$name/ || true
+              cp -r doc_sch_$name/img/pcb/* doc/gen/$name/img/ || true
+              cp -r doc_placement_$name/* hw/cam_profi/$name/assembly/ || true
+              cp -r doc_report_$name/* doc/gen/$name/ || true
+              cp -r doc_ibom_$name/docs/* hw/cam_profi/$name/ibom/ || true
+
+              mv hw/cam_profi/$name/gbr/PnP/ hw/cam_profi/$name/assembly/ || true
+            done
           else
-            NAMES="${{ github.event.repository.name }}"
+            REPO="${{ github.event.repository.name }}"
+            mkdir -p doc/gen/img doc/gen/mesh
+            mkdir -p hw/cam_profi/gbr hw/cam_profi/assembly hw/cam_profi/ibom
+
+            cp -r doc_img_$REPO/* doc/gen/img/ || true
+            cp -r doc_cad_processed_$REPO/cad/* doc/gen/ || true
+            cp -r hw_cam_profi_$REPO/* hw/cam_profi/gbr/ || true
+            cp -r doc_sch_$REPO/docs/* doc/gen/ || true
+            cp -r doc_xml_$REPO/* hw/cam_profi/ || true
+            cp -r doc_sch_$REPO/img/pcb/* doc/gen/img/ || true
+            cp -r doc_placement_$REPO/* hw/cam_profi/assembly/ || true
+            cp -r doc_report_$REPO/* doc/gen/ || true
+            cp -r doc_ibom_$REPO/docs/* hw/cam_profi/ibom/ || true
+
+            mv hw/cam_profi/gbr/PnP/ hw/cam_profi/assembly/ || true
           fi
-
-          for name in $NAMES; do
-            mkdir -p doc/gen/$name/img doc/gen/$name/mesh
-            mkdir -p hw/cam_profi/$name/gbr hw/cam_profi/$name/assembly hw/cam_profi/$name/ibom
-
-            cp -r doc_img_$name/* doc/gen/$name/img/ || true
-            cp -r doc_cad_processed_$name/cad/* doc/gen/$name/ || true
-            cp -r hw_cam_profi_$name/* hw/cam_profi/$name/gbr/ || true
-            cp -r doc_sch_$name/docs/* doc/gen/$name/ || true
-            cp -r doc_xml_$name/* hw/cam_profi/$name/ || true
-            cp -r doc_sch_$name/img/pcb/* doc/gen/$name/img/ || true
-            cp -r doc_placement_$name/* hw/cam_profi/$name/assembly/ || true
-            cp -r doc_report_$name/* doc/gen/$name/ || true
-            cp -r doc_ibom_$name/docs/* hw/cam_profi/$name/ibom/ || true
-
-            mv hw/cam_profi/$name/gbr/PnP/ hw/cam_profi/$name/assembly/ || true
-          done
 
           rm -rf doc_img_* doc_cad_* doc_cad_processed_* hw_cam_profi_* doc_sch_* \
                  doc_placement_* doc_xml_* doc_report_* doc_ibom_* || true
